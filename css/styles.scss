@@ -1,0 +1,18 @@
+@import 'base/_base';
+@import 'modules/_modules';
+@import 'components/_components';
+
+html,
+body {
+    font-family: 'antonio';
+    color: $black-font-color;
+    font-weight: regular;
+    font-size: 12px;
+    margin: 0;
+    background-color: #050505;
+
+    overflow-x: hidden;
+    
+}
+
+a{ cursor: pointer;  }

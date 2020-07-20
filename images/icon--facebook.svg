@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 61 (89581) - https://sketch.com -->
+    <title>icon--facebook</title>
+    <desc>Created with Sketch.</desc>
+    <g id="icon--facebook" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g>
+            <g id="_34304" transform="translate(8.000000, 4.000000)" stroke="#FFFFFF">
+                <path d="M2.078,3.09933333 L2.078,5.29933333 L0.466666667,5.29933333 L0.466666667,7.99333333 L2.08066667,7.99333333 L2.08066667,16 L5.396,16 L5.396,7.996 L7.62066667,7.996 C7.62066667,7.996 7.82933333,6.70466667 7.93,5.292 L5.40866667,5.292 L5.40866667,3.45066667 C5.47109603,3.09576233 5.76778131,2.82935106 6.12733333,2.80533333 L7.93333333,2.80533333 L7.93333333,0 L5.47733333,0 C1.996,0 2.078,2.69666667 2.078,3.09933333 Z" id="Facebook"></path>
+            </g>
+            <rect id="Rectangle_843" x="0" y="0" width="24" height="24"></rect>
+        </g>
+    </g>
+</svg>

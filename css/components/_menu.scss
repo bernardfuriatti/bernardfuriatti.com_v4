@@ -1,0 +1,29 @@
+
+.navBar {
+    & ul {
+        display: flex;
+        align-content: center;
+        padding-top: 16px;
+    }
+}
+.navBar__element{
+    margin: 0 32px 0 32px;
+
+    font-family: 'proxima_nova_ltthin';
+    font-size: 1.0em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    word-spacing: -4px;
+    color: rgba(255, 255, 255, 1.0);
+
+    transition: word-spacing 0.7s;
+
+    &:hover{
+        word-spacing: 0px;
+    }
+    
+    & strong{       
+        font-family: 'proxima_nova_ltsemibold';
+    }
+}
+
