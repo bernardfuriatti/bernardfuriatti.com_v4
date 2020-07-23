@@ -363,15 +363,70 @@ template {
 /*
 *   Arquivo para importar fonts no sistema 
 *
-@font-face {
-    font-family: 'antonio';
-    src: url('antonio/antonio-regular-webfont.woff2') format('woff2'),
-         url('antonio/antonio-regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
 */
+/*
+* Avenir
+*/
+@font-face {
+  font-family: "Avenir Book";
+  src: url("fontFile/Avenir/Avenir-BookOblique.woff2") format("woff2"), url("fontFile/Avenir/Avenir-BookOblique.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Avenir Book";
+  src: url("fontFile/Avenir/Avenir-Book.woff2") format("woff2"), url("fontFile/Avenir/Avenir-Book.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Avenir";
+  src: url("fontFile/Avenir/Avenir-Black.woff2") format("woff2"), url("fontFile/Avenir/Avenir-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Avenir Black Oblique";
+  src: url("fontFile/Avenir/Avenir-BlackOblique.woff2") format("woff2"), url("fontFile/Avenir/Avenir-BlackOblique.woff") format("woff");
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+/*
+* Bebas Font
+*/
+@font-face {
+  font-family: "Bebas Neue";
+  src: url("fontFile/Bebas Neue/BebasNeue-Light.woff2") format("woff2"), url("fontFile/Bebas Neue/BebasNeue-Light.woff") format("woff");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Bebas Neue Book";
+  src: url("fontFile/Bebas Neue/BebasNeue-Book.woff2") format("woff2"), url("fontFile/Bebas Neue/BebasNeue-Book.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Bebas Neue";
+  src: url("fontFile/Bebas Neue/BebasNeue-Bold.woff2") format("woff2"), url("fontFile/Bebas Neue/BebasNeue-Bold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Bebas Neue";
+  src: url("fontFile/Bebas Neue/BebasNeue-Thin.woff2") format("woff2"), url("fontFile/Bebas Neue/BebasNeue-Thin.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {}
 /*
 *   File to define states of elements (eg. Button)
 */
@@ -383,6 +438,136 @@ template {
 /*
 *   File to apply font styles 
 */
+.fontStyle_Bebas--headline1 {
+  font-family: "Bebas Neue";
+  font-weight: 600;
+  font-size: 96px;
+  line-height: 88px;
+  text-transform: uppercase;
+}
+
+.fontStyle_Bebas--headline2 {
+  font-family: "Bebas Neue";
+  font-weight: 600;
+  font-size: 72px;
+  line-height: 64px;
+  text-transform: uppercase;
+}
+
+.fontStyle_Bebas--headline3 {
+  font-family: "Bebas Neue";
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 56px;
+  text-transform: uppercase;
+}
+
+.fontStyle_Bebas--headline4 {
+  font-family: "Bebas Neue";
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.fontStyle_Bebas--headline5 {
+  font-family: "Bebas Neue";
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.fontStyle_Bebas--headline6 {
+  font-family: "Bebas Neue";
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.fontStyle_Bebas--headline1 {
+  font-family: "Avenir";
+  font-weight: 900;
+  font-size: 96px;
+  line-height: 88px;
+}
+
+.fontStyle_Avenir--headline2 {
+  font-family: "Avenir";
+  font-weight: 900;
+  font-size: 72px;
+  line-height: 64px;
+}
+
+.fontStyle_Avenir--headline3 {
+  font-family: "Avenir";
+  font-weight: 900;
+  font-size: 64px;
+  line-height: 56px;
+}
+
+.fontStyle_Avenir--headline4 {
+  font-family: "Avenir";
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 24px;
+}
+
+.fontStyle_Avenir--headline5 {
+  font-family: "Avenir";
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.fontStyle_Avenir--headline6 {
+  font-family: "Avenir";
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 20px;
+}
+
+.fontStyle_Avenir--subtitle1 {
+  font-family: "Avenir";
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.fontStyle_Avenir--subtitle1 {
+  font-family: "Avenir";
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.fontStyle_Avenir--body1 {
+  font-family: "Avenir";
+  font-style: italic;
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.fontStyle_Avenir--body2 {
+  font-family: "Avenir";
+  font-style: italic;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 24px;
+}
+
+.fontStyle_Button {
+  font-family: "Avenir";
+  font-style: italic;
+  font-weight: 900;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
 /*
 *   File to define button styles
 */
