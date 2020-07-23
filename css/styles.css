@@ -573,9 +573,9 @@ template {
 
 .fontStyle_Button {
   font-family: "Avenir";
-  font-style: italic;
+  font-style: normal;
   font-weight: 900;
-  font-size: 12pt;
+  font-size: 10pt;
   line-height: 16pt;
   letter-spacing: 1pt;
   text-transform: uppercase;
@@ -593,17 +593,14 @@ template {
   /* width: auto; */
   /* height: auto; */
   margin: 32px;
-  background-color: black;
+  background-color: #17171A;
 }
 
 .Button_element {
-  background-color: black;
+  background-color: #17171A;
   position: relative;
   top: 0px;
   right: 0px;
-  /* width: auto; */
-  /* display: inline-block; */
-  /* height: 8px; */
   transition: all 0.5s ease-out 0s;
 }
 
