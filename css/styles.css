@@ -368,14 +368,14 @@ template {
 * Avenir
 */
 @font-face {
-  font-family: "Avenir Book";
+  font-family: "Avenir";
   src: url("fontFile/Avenir/Avenir-BookOblique.woff2") format("woff2"), url("fontFile/Avenir/Avenir-BookOblique.woff") format("woff");
   font-weight: 300;
   font-style: italic;
   font-display: swap;
 }
 @font-face {
-  font-family: "Avenir Book";
+  font-family: "Avenir";
   src: url("fontFile/Avenir/Avenir-Book.woff2") format("woff2"), url("fontFile/Avenir/Avenir-Book.woff") format("woff");
   font-weight: 300;
   font-style: normal;
@@ -438,133 +438,146 @@ template {
 /*
 *   File to apply font styles 
 */
+.fontStyle_Color-black {
+  color: black;
+}
+.fontStyle_Color-white {
+  color: white;
+}
+
 .fontStyle_Bebas--headline1 {
   font-family: "Bebas Neue";
   font-weight: 600;
-  font-size: 96px;
-  line-height: 88px;
+  font-size: 96pt;
+  line-height: 88pt;
   text-transform: uppercase;
+}
+.fontStyle_Bebas--headline1-white {
+  color: white;
+}
+.fontStyle_Bebas--headline1-black {
+  color: #17171A;
 }
 
 .fontStyle_Bebas--headline2 {
   font-family: "Bebas Neue";
   font-weight: 600;
-  font-size: 72px;
-  line-height: 64px;
+  font-size: 72pt;
+  line-height: 64pt;
   text-transform: uppercase;
 }
 
 .fontStyle_Bebas--headline3 {
   font-family: "Bebas Neue";
   font-weight: 600;
-  font-size: 64px;
-  line-height: 56px;
+  font-size: 64pt;
+  line-height: 56pt;
   text-transform: uppercase;
 }
 
 .fontStyle_Bebas--headline4 {
   font-family: "Bebas Neue";
   font-weight: 600;
-  font-size: 32px;
-  line-height: 24px;
+  font-size: 32pt;
+  line-height: 24pt;
   text-transform: uppercase;
 }
 
 .fontStyle_Bebas--headline5 {
   font-family: "Bebas Neue";
   font-weight: 600;
-  font-size: 24px;
-  line-height: 24px;
+  font-size: 24pt;
+  line-height: 24pt;
   text-transform: uppercase;
 }
 
 .fontStyle_Bebas--headline6 {
   font-family: "Bebas Neue";
   font-weight: 600;
-  font-size: 20px;
-  line-height: 20px;
+  font-size: 20pt;
+  line-height: 20pt;
   text-transform: uppercase;
 }
 
-.fontStyle_Bebas--headline1 {
+.fontStyle_Avenir--headline1 {
   font-family: "Avenir";
   font-weight: 900;
-  font-size: 96px;
-  line-height: 88px;
+  font-size: 96pt;
+  line-height: 88pt;
 }
 
 .fontStyle_Avenir--headline2 {
   font-family: "Avenir";
   font-weight: 900;
-  font-size: 72px;
-  line-height: 64px;
+  font-size: 72pt;
+  line-height: 64pt;
 }
 
 .fontStyle_Avenir--headline3 {
   font-family: "Avenir";
   font-weight: 900;
-  font-size: 64px;
-  line-height: 56px;
+  font-size: 64pt;
+  line-height: 56pt;
 }
 
 .fontStyle_Avenir--headline4 {
   font-family: "Avenir";
   font-weight: 900;
-  font-size: 32px;
-  line-height: 24px;
+  font-size: 32pt;
+  line-height: 24pt;
 }
 
 .fontStyle_Avenir--headline5 {
   font-family: "Avenir";
   font-weight: 900;
-  font-size: 24px;
-  line-height: 24px;
+  font-size: 24pt;
+  line-height: 24pt;
 }
 
 .fontStyle_Avenir--headline6 {
   font-family: "Avenir";
   font-weight: 900;
-  font-size: 20px;
-  line-height: 20px;
+  font-size: 20pt;
+  line-height: 20pt;
 }
 
 .fontStyle_Avenir--subtitle1 {
   font-family: "Avenir";
   font-weight: 900;
-  font-size: 18px;
-  line-height: 24px;
+  font-size: 18pt;
+  line-height: 24pt;
 }
 
 .fontStyle_Avenir--subtitle1 {
   font-family: "Avenir";
   font-weight: 900;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 16pt;
+  line-height: 24pt;
 }
 
 .fontStyle_Avenir--body1 {
   font-family: "Avenir";
   font-style: italic;
   font-weight: 900;
-  font-size: 14px;
-  line-height: 24px;
+  font-size: 14pt;
+  line-height: 24pt;
 }
 
 .fontStyle_Avenir--body2 {
   font-family: "Avenir";
   font-style: italic;
   font-weight: 300;
-  font-size: 12px;
-  line-height: 24px;
+  font-size: 12pt;
+  line-height: 24pt;
 }
 
 .fontStyle_Button {
   font-family: "Avenir";
   font-style: italic;
   font-weight: 900;
-  font-size: 12px;
-  line-height: 16px;
-  letter-spacing: 1px;
+  font-size: 12pt;
+  line-height: 16pt;
+  letter-spacing: 1pt;
   text-transform: uppercase;
 }
 
