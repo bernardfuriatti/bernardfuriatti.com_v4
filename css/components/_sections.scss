@@ -12,34 +12,34 @@
     padding-right: 24px;
 
     box-sizing: border-box;
+    #BernardFuriatti_container {
+        display: flex;
+        height: 90vh;
+        
+        align-items: center;
+        justify-content: center;
+        
+        border-radius: 2px;
+        box-shadow: 2px 2px 8px 0 rgba(0, 0, 0, 0.32);
+        background-color: #17171a;
+        
+    }
     
+    .callToActions_container{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin-top: 8vh;
+    
+    }
+    
+    .callToActions_container a,button {
+        margin-left:16px;
+        margin-right:16px;
+    }
 }
 
-#BernardFuriatti_container {
-    display: flex;
-    height: 90vh;
-    
-    align-items: center;
-    justify-content: center;
-    
-    border-radius: 2px;
-    box-shadow: 2px 2px 8px 0 rgba(0, 0, 0, 0.32);
-    background-color: #17171a;
-    
-}
 
-.callToActions_container{
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    margin-top: 8vh;
-
-}
-
-.callToActions_container a,button {
-    margin-left:16px;
-    margin-right:16px;
-}
 
 
 /*
@@ -61,41 +61,55 @@
     padding-right: 24px;
     padding-top: 32px;
     padding-bottom: 32px;
+
+    img{
+        height: 32px;
+        margin-right: 2vw;
+        margin-left: 2vw;
+       
+    }
    
 }
 
-#section_Brand img{
-    height: 32px;
-    margin-right: 2vw;
-    margin-left: 2vw;
-   
-}
+
 
 
 
 //ATEN"CÃO TROCA MEDIA ABAIXO
 @media only screen and (max-width:1920px) and (min-width:1281px) { 
     /* hi-res laptops and desktops */ 
-    #section_Brand img{
+    #section_Brand {
+    
+        img{
         height: 32px;
+        }
     }
 }
 @media only screen and (max-width:1280px) and (min-width:1025px) { 
     /* big landscape tablets, laptops, and desktops */
-    #section_Brand img{
+    #section_Brand {
+    
+        img{
         height: 24px;
+        }
     }
  }
  @media only screen and (max-width:1024px) and (min-width:961px) { 
     /* tablet, landscape iPad, lo-res laptops ands desktops */ 
-    #section_Brand img{
+    #section_Brand {
+    
+        img{
         height: 24px;
+        }
     }
 }
 @media only screen and (max-width:960px) and (min-width:641px) { 
     /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ 
-    #section_Brand img{
-        height: 24px;
+    #section_Brand {
+    
+        img{
+            height: 24px;
+        }
     }
     #Brand--duoGourmet{
         display: none;
@@ -105,60 +119,110 @@
 
 @media only screen and (max-width:640px) and (min-width:481px) { 
     /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ 
-    #section_Brand img{
-        height: 24px;
-    }
-    #Brand--falconi{
-        display: none;
-    }
-    #Brand--supermix{
-        display: none;
-    }
-    #Brand--duoGourmet{
-        display: none;
+    #section_Brand{
+    
+        img{
+            height: 24px;
+        }
+
+        #Brand--falconi{
+            display: none;
+        }
+        #Brand--supermix{
+            display: none;
+        }
+        #Brand--duoGourmet{
+            display: none;
+        }
     }
     
+    
 }
-@media only screen and (max-width:480px) and (min-width:320px) { 
+@media only screen and (max-width:480px) and (min-width:0) { 
     /* smartphones, iPhone, portrait 480x320 phones */ 
-    #section_Brand img{
-        height: 24px;
+    #section_BernardFuriatti{
+        padding-left: 8px;
+        padding-top: 8px;
+        padding-right: 8px;
+        #BernardFuriatti_container {
+            display: flex;
+            
+            align-items: center;
+            justify-content: center;
+            
+            border-radius: 2px;
+            box-shadow: 2px 2px 8px 0 rgba(0, 0, 0, 0.32);
+            background-color: #17171a;
+        }
+
     }
-    #Brand--localizaHertz{
-        display: none;
-    }
+
+    #section_Brand {
     
-    #Brand--falconi{
-        display: none;
+        img{
+        height: 24px;
+        }
+
+        #Brand--localizaHertz{
+            display: none;
+        }
+        
+        #Brand--falconi{
+            display: none;
+        }
+        #Brand--supermix{
+            display: none;
+        }
+        #Brand--duoGourmet{
+            display: none;
+        }
     }
-    #Brand--supermix{
-        display: none;
-    }
-    #Brand--duoGourmet{
-        display: none;
-    }
+  
 }
+/*
 @media only screen and (max-width:320px) { 
-    #section_Brand img{
-        height: 24px;
+    #section_BernardFuriatti{
+        padding-left: 8px;
+        padding-top: 8px;
+        padding-right: 8px;
+        #BernardFuriatti_container {
+            display: flex;
+            
+            align-items: center;
+            justify-content: center;
+            
+            border-radius: 2px;
+            box-shadow: 2px 2px 8px 0 rgba(0, 0, 0, 0.32);
+            background-color: #17171a;
+        }
+
     }
-    #Brand--localizaHertz{
-        display: none;
-    }
+
+    #section_Brand {
     
-    #Brand--falconi{
-        display: none;
+        img{
+        height: 24px;
+        }
+
+        #Brand--localizaHertz{
+            display: none;
+        }
+        
+        #Brand--falconi{
+            display: none;
+        }
+        #Brand--supermix{
+            display: none;
+        }
+        #Brand--duoGourmet{
+            display: none;
+        }
     }
-    #Brand--supermix{
-        display: none;
-    }
-    #Brand--duoGourmet{
-        display: none;
-    }
+   
 
 }
 
 
 
-
+*/
 
