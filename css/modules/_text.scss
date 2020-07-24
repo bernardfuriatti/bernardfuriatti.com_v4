@@ -1,14 +1,19 @@
 /*
 *   File to apply font styles 
 */
+
+h1{
+    margin: 0;
+}
+
 //Bebas
 
 .fontStyle_Color{
     &-black{
-        color:black;
+        color:$primary-color;
     }
     &-white{
-        color:white;
+        color:$second-color;
     }
 }
 
@@ -144,17 +149,23 @@
 }
 
 .fontStyle_Avenir--body1{
+    opacity: 80%;
+
     font-family: 'Avenir';
     font-style: italic;
 
-    font-weight: 900;
+    font-weight: 300;
     font-size: 14pt;
+    
+
 
     line-height: 24pt;
     
 }
 
 .fontStyle_Avenir--body2{
+    opacity: 80%;
+
     font-family: 'Avenir';
     font-style: italic;
 

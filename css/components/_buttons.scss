@@ -2,15 +2,13 @@
 *   File to define button styles
 */
 .Button_container{
-     /* display: inline-block; */
-     padding: 4px 16px;
-     color: white;
-     border: 3px solid white;
-     position: relative;
-     /* width: auto; */
-     /* height: auto; */
-     margin: 32px;
-     background-color: $primary-color;
+    position: relative;
+    
+    padding: 4px 16px;   
+     
+    border: 3px solid white;
+    background-color: $primary-color;
+    color: white;
 }
 
 .Button_element{

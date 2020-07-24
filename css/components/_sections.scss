@@ -1,6 +1,80 @@
 /*
 *   File to create section styles 
 */
+
+// Section 1
+#section_BernardFuriatti{
+    position: relative;
+    z-index: 2;
+    
+    padding-left: 24px;
+    padding-top: 24px;
+    padding-right: 24px;
+
+    box-sizing: border-box;
+    
+}
+
+#BernardFuriatti_container {
+    display: flex;
+    height: 90vh;
+    
+    align-items: center;
+    justify-content: center;
+    
+    border-radius: 2px;
+    box-shadow: 2px 2px 8px 0 rgba(0, 0, 0, 0.32);
+    background-color: #17171a;
+    
+}
+
+.callToActions_container{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 8vh;
+
+}
+
+.callToActions_container a,button {
+    margin-left:16px;
+    margin-right:16px;
+}
+
+
+// Section 2
+#section_Brand{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+    z-index: 0;
+    top: -8px;
+
+    border-top: 1px solid $divider-color;
+    border-bottom: 1px solid $divider-color;
+   
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+   
+}
+
+#section_Brand img{
+    height: 32px;
+    margin-right: 2vw;
+    margin-left: 2vw;
+   
+
+}
+
+
+
+
+
+
 @media (min-width:320px) { 
     /* smartphones, iPhone, portrait 480x320 phones */ 
 }
