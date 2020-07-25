@@ -2,7 +2,9 @@
 *   File to create section styles 
 */
 
-// Section 1
+/*
+*   Section 1
+*/
 #section_BernardFuriatti{
     position: relative;
     z-index: 2;
@@ -12,9 +14,12 @@
     padding-right: 24px;
 
     box-sizing: border-box;
+
+   
+
     #BernardFuriatti_container {
         display: flex;
-        height: 90vh;
+        height: 85vh;
         
         align-items: center;
         justify-content: center;
@@ -22,21 +27,45 @@
         border-radius: 2px;
         box-shadow: 2px 2px 8px 0 rgba(0, 0, 0, 0.32);
         background-color: #17171a;
+
+        #BernardFuriatti--body{
+            @include fontStyle_Avenir--body2;
+        }
+    
+        #BernardFuriatti--title {
+            @include fontStyle_Bebas--headline1;
+        }
+
+        #BernardFuriatti_image{
+            mix-blend-mode: lighten; 
+            height:90%; 
+            float: right; 
+            padding-left: 64px;
+        }
+
+
+        .callToActions_container{
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            margin-top: 8vh;
+    
+            a,button {
+                margin-left:16px;
+                margin-right:16px;
+            }
+        
+        }
+
+        #Mobile--callToActions_container{
+            display: none;
+        }
         
     }
     
-    .callToActions_container{
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        margin-top: 8vh;
     
-    }
     
-    .callToActions_container a,button {
-        margin-left:16px;
-        margin-right:16px;
-    }
+    
 }
 
 
@@ -62,12 +91,16 @@
     padding-top: 32px;
     padding-bottom: 32px;
 
+    #section_Brand--title{
+        @include fontStyle_Avenir--body2;
+    }
+
     img{
         height: 32px;
         margin-right: 2vw;
         margin-left: 2vw;
-       
     }
+    
    
 }
 
@@ -78,6 +111,10 @@
 //ATEN"CÃO TROCA MEDIA ABAIXO
 @media only screen and (max-width:1920px) and (min-width:1281px) { 
     /* hi-res laptops and desktops */ 
+
+    /*
+    * Section 2
+    */ 
     #section_Brand {
     
         img{
@@ -87,6 +124,10 @@
 }
 @media only screen and (max-width:1280px) and (min-width:1025px) { 
     /* big landscape tablets, laptops, and desktops */
+    
+    /*
+    * Section 2
+    */ 
     #section_Brand {
     
         img{
@@ -96,6 +137,16 @@
  }
  @media only screen and (max-width:1024px) and (min-width:961px) { 
     /* tablet, landscape iPad, lo-res laptops ands desktops */ 
+    
+    /*
+    * Section 1
+    */ 
+    #section_BernardFuriatti{
+        
+    }
+    /*
+    * Section 2
+    */ 
     #section_Brand {
     
         img{
@@ -105,6 +156,23 @@
 }
 @media only screen and (max-width:960px) and (min-width:641px) { 
     /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ 
+    
+    /*
+    * Section 1
+    */ 
+    #section_BernardFuriatti{
+        #BernardFuriatti_container 
+            #BernardFuriatti_image{
+                mix-blend-mode: lighten; 
+                height:60%; 
+                float: right; 
+                padding-left: 64px;
+            }
+        
+    }
+    /*
+    * Section 2
+    */ 
     #section_Brand {
     
         img{
@@ -119,20 +187,99 @@
 
 @media only screen and (max-width:640px) and (min-width:481px) { 
     /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ 
-    #section_Brand{
+     
+    /*
+    * Section 1
+    */ 
+    #section_BernardFuriatti{
+        padding-left: 8px;
+        padding-top: 8px;
+        padding-right: 8px;
+
+        #BernardFuriatti_container {
+            display: flex;
+            
+            align-items: center;
+            justify-content: space-between;
+            flex-direction: column;
+            
+            box-sizing: border-box;
+            padding: 24px;
+
+            #BernardFuriatti_container--group{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            #BernardFuriatti--body{
+                @include fontStyle_Avenir--body2;
+                text-align: center;
+            }
+
+            #BernardFuriatti--title {
+                @include fontStyle_Bebas--headline3;
     
+                br{
+                    display: none
+                }
+            }
+
+            #BernardFuriatti_image {
+                height: 50vh;
+                padding: 0;
+    
+                -webkit-transform: scaleX(-1);
+                transform: scaleX(-1);
+            }
+
+            .callToActions_container{
+                display:none;
+            }
+            
+            #Mobile--callToActions_container{
+                display: flex;
+                width: 100%;
+                justify-content: space-between;
+
+                a {
+                    padding-right: 24px;                    
+                }
+            }
+            
+        }
+    
+    }
+
+    /*
+    * Section 2
+    */ 
+    #section_Brand{
+        display: block;
+
+        padding-top: 16px;
+        padding-bottom: 16px;
+        
         img{
             height: 24px;
         }
 
-        #Brand--falconi{
-            display: none;
-        }
         #Brand--supermix{
             display: none;
         }
         #Brand--duoGourmet{
             display: none;
+        }
+
+        #section_Brand--title{
+            display: flex;
+            justify-content: center;
+            margin-bottom: 8px;
+        }
+        #section_Brand--group{
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
     }
     
@@ -140,27 +287,80 @@
 }
 @media only screen and (max-width:480px) and (min-width:0) { 
     /* smartphones, iPhone, portrait 480x320 phones */ 
+    /*
+    * Section 1
+    */ 
     #section_BernardFuriatti{
         padding-left: 8px;
         padding-top: 8px;
         padding-right: 8px;
+
         #BernardFuriatti_container {
             display: flex;
             
             align-items: center;
-            justify-content: center;
+            justify-content: space-between;
+            flex-direction: column;
             
-            border-radius: 2px;
-            box-shadow: 2px 2px 8px 0 rgba(0, 0, 0, 0.32);
-            background-color: #17171a;
-        }
+            box-sizing: border-box;
+            padding: 24px;
 
+            #BernardFuriatti_container--group{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            #BernardFuriatti--body{
+                @include fontStyle_Avenir--body2;
+                text-align: center;
+            }
+
+            #BernardFuriatti--title {
+                @include fontStyle_Bebas--headline4;
+    
+                br{
+                    display: none
+                }
+            }
+
+            #BernardFuriatti_image {
+                height: 50vh;
+                padding: 0;
+    
+                -webkit-transform: scaleX(-1);
+                transform: scaleX(-1);
+            }
+
+            .callToActions_container{
+                display:none;
+            }
+            
+            #Mobile--callToActions_container{
+                display: flex;
+                width: 100%;
+                justify-content: space-between;
+
+                a {
+                    padding-right: 24px;                    
+                }
+            }
+            
+        }
+    
     }
 
-    #section_Brand {
-    
+    /*
+    * Section 2
+    */ 
+    #section_Brand{
+        display: block;
+
+        padding-top: 16px;
+        padding-bottom: 16px;
+        
         img{
-        height: 24px;
+            height: 24px;
         }
 
         #Brand--localizaHertz{
@@ -170,11 +370,24 @@
         #Brand--falconi{
             display: none;
         }
+
         #Brand--supermix{
             display: none;
         }
         #Brand--duoGourmet{
             display: none;
+        }
+
+        #section_Brand--title{
+            display: flex;
+            justify-content: center;
+            margin-bottom: 8px;
+
+        }
+        #section_Brand--group{
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
     }
   

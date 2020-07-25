@@ -369,28 +369,28 @@ template {
 */
 @font-face {
   font-family: "Avenir";
-  src: url("fontFile/Avenir/Avenir-BookOblique.woff2") format("woff2"), url("fontFile/Avenir/Avenir-BookOblique.woff") format("woff");
+  src: url("modules/fontFile/Avenir/Avenir-BookOblique.woff2") format("woff2"), url("modules/fontFile/Avenir/Avenir-BookOblique.woff") format("woff");
   font-weight: 300;
   font-style: italic;
   font-display: swap;
 }
 @font-face {
   font-family: "Avenir";
-  src: url("fontFile/Avenir/Avenir-Book.woff2") format("woff2"), url("fontFile/Avenir/Avenir-Book.woff") format("woff");
+  src: url("modules/fontFile/Avenir/Avenir-Book.woff2") format("woff2"), url("modules/fontFile/Avenir/Avenir-Book.woff") format("woff");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Avenir";
-  src: url("fontFile/Avenir/Avenir-Black.woff2") format("woff2"), url("fontFile/Avenir/Avenir-Black.woff") format("woff");
+  src: url("modules/fontFile/Avenir/Avenir-Black.woff2") format("woff2"), url("modules/fontFile/Avenir/Avenir-Black.woff") format("woff");
   font-weight: 900;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Avenir Black Oblique";
-  src: url("fontFile/Avenir/Avenir-BlackOblique.woff2") format("woff2"), url("fontFile/Avenir/Avenir-BlackOblique.woff") format("woff");
+  src: url("modules/fontFile/Avenir/Avenir-BlackOblique.woff2") format("woff2"), url("modules/fontFile/Avenir/Avenir-BlackOblique.woff") format("woff");
   font-weight: 900;
   font-style: italic;
   font-display: swap;
@@ -400,28 +400,28 @@ template {
 */
 @font-face {
   font-family: "Bebas Neue";
-  src: url("fontFile/Bebas Neue/BebasNeue-Light.woff2") format("woff2"), url("fontFile/Bebas Neue/BebasNeue-Light.woff") format("woff");
+  src: url("modules/fontFile/Bebas Neue/BebasNeue-Light.woff2") format("woff2"), url("modules/fontFile/Bebas Neue/BebasNeue-Light.woff") format("woff");
   font-weight: 200;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Bebas Neue Book";
-  src: url("fontFile/Bebas Neue/BebasNeue-Book.woff2") format("woff2"), url("fontFile/Bebas Neue/BebasNeue-Book.woff") format("woff");
+  src: url("modules/fontFile/Bebas Neue/BebasNeue-Book.woff2") format("woff2"), url("modules/fontFile/Bebas Neue/BebasNeue-Book.woff") format("woff");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Bebas Neue";
-  src: url("fontFile/Bebas Neue/BebasNeue-Bold.woff2") format("woff2"), url("fontFile/Bebas Neue/BebasNeue-Bold.woff") format("woff");
+  src: url("modules/fontFile/Bebas Neue/BebasNeue-Bold.woff2") format("woff2"), url("modules/fontFile/Bebas Neue/BebasNeue-Bold.woff") format("woff");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Bebas Neue";
-  src: url("fontFile/Bebas Neue/BebasNeue-Thin.woff2") format("woff2"), url("fontFile/Bebas Neue/BebasNeue-Thin.woff") format("woff");
+  src: url("modules/fontFile/Bebas Neue/BebasNeue-Thin.woff2") format("woff2"), url("modules/fontFile/Bebas Neue/BebasNeue-Thin.woff") format("woff");
   font-weight: 100;
   font-style: normal;
   font-display: swap;
@@ -449,144 +449,6 @@ h1 {
   color: white;
 }
 
-.fontStyle_Bebas--headline1 {
-  font-family: "Bebas Neue";
-  font-weight: 600;
-  font-size: 96pt;
-  line-height: 88pt;
-  text-transform: uppercase;
-}
-.fontStyle_Bebas--headline1-white {
-  color: white;
-}
-.fontStyle_Bebas--headline1-black {
-  color: #17171A;
-}
-
-.fontStyle_Bebas--headline2 {
-  font-family: "Bebas Neue";
-  font-weight: 600;
-  font-size: 72pt;
-  line-height: 64pt;
-  text-transform: uppercase;
-}
-
-.fontStyle_Bebas--headline3 {
-  font-family: "Bebas Neue";
-  font-weight: 600;
-  font-size: 64pt;
-  line-height: 56pt;
-  text-transform: uppercase;
-}
-
-.fontStyle_Bebas--headline4 {
-  font-family: "Bebas Neue";
-  font-weight: 600;
-  font-size: 32pt;
-  line-height: 24pt;
-  text-transform: uppercase;
-}
-
-.fontStyle_Bebas--headline5 {
-  font-family: "Bebas Neue";
-  font-weight: 600;
-  font-size: 24pt;
-  line-height: 24pt;
-  text-transform: uppercase;
-}
-
-.fontStyle_Bebas--headline6 {
-  font-family: "Bebas Neue";
-  font-weight: 600;
-  font-size: 20pt;
-  line-height: 20pt;
-  text-transform: uppercase;
-}
-
-.fontStyle_Avenir--headline1 {
-  font-family: "Avenir";
-  font-weight: 900;
-  font-size: 96pt;
-  line-height: 88pt;
-}
-
-.fontStyle_Avenir--headline2 {
-  font-family: "Avenir";
-  font-weight: 900;
-  font-size: 72pt;
-  line-height: 64pt;
-}
-
-.fontStyle_Avenir--headline3 {
-  font-family: "Avenir";
-  font-weight: 900;
-  font-size: 64pt;
-  line-height: 56pt;
-}
-
-.fontStyle_Avenir--headline4 {
-  font-family: "Avenir";
-  font-weight: 900;
-  font-size: 32pt;
-  line-height: 24pt;
-}
-
-.fontStyle_Avenir--headline5 {
-  font-family: "Avenir";
-  font-weight: 900;
-  font-size: 24pt;
-  line-height: 24pt;
-}
-
-.fontStyle_Avenir--headline6 {
-  font-family: "Avenir";
-  font-weight: 900;
-  font-size: 20pt;
-  line-height: 20pt;
-}
-
-.fontStyle_Avenir--subtitle1 {
-  font-family: "Avenir";
-  font-weight: 900;
-  font-size: 18pt;
-  line-height: 24pt;
-}
-
-.fontStyle_Avenir--subtitle1 {
-  font-family: "Avenir";
-  font-weight: 900;
-  font-size: 16pt;
-  line-height: 24pt;
-}
-
-.fontStyle_Avenir--body1 {
-  opacity: 80%;
-  font-family: "Avenir";
-  font-style: italic;
-  font-weight: 300;
-  font-size: 14pt;
-  line-height: 24pt;
-}
-
-.fontStyle_Avenir--body2 {
-  opacity: 80%;
-  font-family: "Avenir";
-  font-style: italic;
-  font-weight: 300;
-  font-size: 12pt;
-  line-height: 24pt;
-}
-
-.fontStyle_Button {
-  font-family: "Avenir";
-  font-style: normal;
-  font-weight: 900;
-  font-size: 10pt;
-  line-height: 16pt;
-  letter-spacing: 1pt;
-  text-transform: uppercase;
-}
-
 /*
 *   File to define button styles
 */
@@ -604,6 +466,13 @@ h1 {
   top: 0px;
   right: 0px;
   transition: all 0.5s ease-out 0s;
+  font-family: "Avenir";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 10px;
+  line-height: 16px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
 
 .Button_container:hover .Button_element {
@@ -661,6 +530,9 @@ h1 {
 /*
 *   File to create section styles 
 */
+/*
+*   Section 1
+*/
 #section_BernardFuriatti {
   position: relative;
   z-index: 2;
@@ -671,22 +543,46 @@ h1 {
 }
 #section_BernardFuriatti #BernardFuriatti_container {
   display: flex;
-  height: 90vh;
+  height: 85vh;
   align-items: center;
   justify-content: center;
   border-radius: 2px;
   box-shadow: 2px 2px 8px 0 rgba(0, 0, 0, 0.32);
   background-color: #17171a;
 }
-#section_BernardFuriatti .callToActions_container {
+#section_BernardFuriatti #BernardFuriatti_container #BernardFuriatti--body {
+  opacity: 80%;
+  font-family: "Avenir";
+  font-style: italic;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 24px;
+}
+#section_BernardFuriatti #BernardFuriatti_container #BernardFuriatti--title {
+  font-family: "Bebas Neue";
+  font-weight: 600;
+  font-size: 96px;
+  line-height: 88px;
+  text-transform: uppercase;
+}
+#section_BernardFuriatti #BernardFuriatti_container #BernardFuriatti_image {
+  mix-blend-mode: lighten;
+  height: 90%;
+  float: right;
+  padding-left: 64px;
+}
+#section_BernardFuriatti #BernardFuriatti_container .callToActions_container {
   display: flex;
   justify-content: flex-end;
   align-items: center;
   margin-top: 8vh;
 }
-#section_BernardFuriatti .callToActions_container a, #section_BernardFuriatti button {
+#section_BernardFuriatti #BernardFuriatti_container .callToActions_container a, #section_BernardFuriatti #BernardFuriatti_container .callToActions_container button {
   margin-left: 16px;
   margin-right: 16px;
+}
+#section_BernardFuriatti #BernardFuriatti_container #Mobile--callToActions_container {
+  display: none;
 }
 
 /*
@@ -706,6 +602,14 @@ h1 {
   padding-top: 32px;
   padding-bottom: 32px;
 }
+#section_Brand #section_Brand--title {
+  opacity: 80%;
+  font-family: "Avenir";
+  font-style: italic;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 24px;
+}
 #section_Brand img {
   height: 32px;
   margin-right: 2vw;
@@ -714,24 +618,49 @@ h1 {
 
 @media only screen and (max-width: 1920px) and (min-width: 1281px) {
   /* hi-res laptops and desktops */
+  /*
+  * Section 2
+  */
   #section_Brand img {
     height: 32px;
   }
 }
 @media only screen and (max-width: 1280px) and (min-width: 1025px) {
   /* big landscape tablets, laptops, and desktops */
+  /*
+  * Section 2
+  */
   #section_Brand img {
     height: 24px;
   }
 }
 @media only screen and (max-width: 1024px) and (min-width: 961px) {
   /* tablet, landscape iPad, lo-res laptops ands desktops */
+  /*
+  * Section 1
+  */
+  /*
+  * Section 2
+  */
   #section_Brand img {
     height: 24px;
   }
 }
 @media only screen and (max-width: 960px) and (min-width: 641px) {
   /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+  /*
+  * Section 1
+  */
+  #section_BernardFuriatti #BernardFuriatti_container #BernardFuriatti_image {
+    mix-blend-mode: lighten;
+    height: 60%;
+    float: right;
+    padding-left: 64px;
+  }
+
+  /*
+  * Section 2
+  */
   #section_Brand img {
     height: 24px;
   }
@@ -742,21 +671,9 @@ h1 {
 }
 @media only screen and (max-width: 640px) and (min-width: 481px) {
   /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
-  #section_Brand img {
-    height: 24px;
-  }
-  #section_Brand #Brand--falconi {
-    display: none;
-  }
-  #section_Brand #Brand--supermix {
-    display: none;
-  }
-  #section_Brand #Brand--duoGourmet {
-    display: none;
-  }
-}
-@media only screen and (max-width: 480px) and (min-width: 0) {
-  /* smartphones, iPhone, portrait 480x320 phones */
+  /*
+  * Section 1
+  */
   #section_BernardFuriatti {
     padding-left: 8px;
     padding-top: 8px;
@@ -765,12 +682,149 @@ h1 {
   #section_BernardFuriatti #BernardFuriatti_container {
     display: flex;
     align-items: center;
-    justify-content: center;
-    border-radius: 2px;
-    box-shadow: 2px 2px 8px 0 rgba(0, 0, 0, 0.32);
-    background-color: #17171a;
+    justify-content: space-between;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 24px;
+  }
+  #section_BernardFuriatti #BernardFuriatti_container #BernardFuriatti_container--group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #section_BernardFuriatti #BernardFuriatti_container #BernardFuriatti--body {
+    opacity: 80%;
+    font-family: "Avenir";
+    font-style: italic;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 24px;
+    text-align: center;
+  }
+  #section_BernardFuriatti #BernardFuriatti_container #BernardFuriatti--title {
+    font-family: "Bebas Neue";
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 56px;
+    text-transform: uppercase;
+  }
+  #section_BernardFuriatti #BernardFuriatti_container #BernardFuriatti--title br {
+    display: none;
+  }
+  #section_BernardFuriatti #BernardFuriatti_container #BernardFuriatti_image {
+    height: 50vh;
+    padding: 0;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+  }
+  #section_BernardFuriatti #BernardFuriatti_container .callToActions_container {
+    display: none;
+  }
+  #section_BernardFuriatti #BernardFuriatti_container #Mobile--callToActions_container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+  #section_BernardFuriatti #BernardFuriatti_container #Mobile--callToActions_container a {
+    padding-right: 24px;
   }
 
+  /*
+  * Section 2
+  */
+  #section_Brand {
+    display: block;
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+  #section_Brand img {
+    height: 24px;
+  }
+  #section_Brand #Brand--supermix {
+    display: none;
+  }
+  #section_Brand #Brand--duoGourmet {
+    display: none;
+  }
+  #section_Brand #section_Brand--title {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 8px;
+  }
+  #section_Brand #section_Brand--group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media only screen and (max-width: 480px) and (min-width: 0) {
+  /* smartphones, iPhone, portrait 480x320 phones */
+  /*
+  * Section 1
+  */
+  #section_BernardFuriatti {
+    padding-left: 8px;
+    padding-top: 8px;
+    padding-right: 8px;
+  }
+  #section_BernardFuriatti #BernardFuriatti_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 24px;
+  }
+  #section_BernardFuriatti #BernardFuriatti_container #BernardFuriatti_container--group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #section_BernardFuriatti #BernardFuriatti_container #BernardFuriatti--body {
+    opacity: 80%;
+    font-family: "Avenir";
+    font-style: italic;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 24px;
+    text-align: center;
+  }
+  #section_BernardFuriatti #BernardFuriatti_container #BernardFuriatti--title {
+    font-family: "Bebas Neue";
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 24px;
+    text-transform: uppercase;
+  }
+  #section_BernardFuriatti #BernardFuriatti_container #BernardFuriatti--title br {
+    display: none;
+  }
+  #section_BernardFuriatti #BernardFuriatti_container #BernardFuriatti_image {
+    height: 50vh;
+    padding: 0;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+  }
+  #section_BernardFuriatti #BernardFuriatti_container .callToActions_container {
+    display: none;
+  }
+  #section_BernardFuriatti #BernardFuriatti_container #Mobile--callToActions_container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+  #section_BernardFuriatti #BernardFuriatti_container #Mobile--callToActions_container a {
+    padding-right: 24px;
+  }
+
+  /*
+  * Section 2
+  */
+  #section_Brand {
+    display: block;
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
   #section_Brand img {
     height: 24px;
   }
@@ -786,6 +840,16 @@ h1 {
   #section_Brand #Brand--duoGourmet {
     display: none;
   }
+  #section_Brand #section_Brand--title {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 8px;
+  }
+  #section_Brand #section_Brand--group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 /*
 @media only screen and (max-width:320px) { 
@@ -795,10 +859,10 @@ h1 {
         padding-right: 8px;
         #BernardFuriatti_container {
             display: flex;
-            
+
             align-items: center;
             justify-content: center;
-            
+
             border-radius: 2px;
             box-shadow: 2px 2px 8px 0 rgba(0, 0, 0, 0.32);
             background-color: #17171a;
@@ -807,7 +871,7 @@ h1 {
     }
 
     #section_Brand {
-    
+
         img{
         height: 24px;
         }
@@ -815,7 +879,7 @@ h1 {
         #Brand--localizaHertz{
             display: none;
         }
-        
+
         #Brand--falconi{
             display: none;
         }
@@ -826,7 +890,7 @@ h1 {
             display: none;
         }
     }
-   
+
 
 }
 

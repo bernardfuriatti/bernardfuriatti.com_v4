@@ -11,10 +11,7 @@
         body {
             background-color: white;  
         }
-        #BernardFuriatti_image{
-            mix-blend-mode: lighten; height:90%; float: right; padding-left: 64px;
-        }
-        
+
        
         
     </style>
@@ -27,13 +24,15 @@
         <div id="BernardFuriatti_container">
 
             <!-- Div for I'm Bernard Furiatti -->
-            <div>
-                <p class="fontStyle_Avenir--body2 fontStyle_Color-white" >I'm</p>
-                <h1 class="fontStyle_Bebas--headline1 fontStyle_Color-white">Bernard<br/>Furiatti,</h1>
-                <p class="fontStyle_Avenir--body2 fontStyle_Color-white">product designer and front-end developer.</p>
+            <div id="BernardFuriatti_container--group">
+                <p id="BernardFuriatti--body" class="fontStyle_Color-white" >I'm</p>
+                <h1 id="BernardFuriatti--title" class="fontStyle_Color-white">Bernard<br/>Furiatti,</h1>
+                <p id="BernardFuriatti--body" class="fontStyle_Color-white">product designer and front-end developer.</p>
                 <div class="callToActions_container">
-                    <a href="https://www.instagram.com/furiatti/"><img src="images/icon--instagram.svg" alt=""></a>
-                    <a href="https://dribbble.com/Furiatti/collections"><img src="images/icon--dribbble.svg" alt=""></a>
+                    <div id="callToActions_socialMedia">
+                        <a href="https://www.instagram.com/furiatti/"><img src="images/icon--instagram.svg" alt=""></a>
+                        <a href="https://dribbble.com/Furiatti/collections"><img src="images/icon--dribbble.svg" alt=""></a>
+                    </div>
                     <button class="Button_container" >
                         <span class="fontStyle_Button Button_element">HIRE ME</span>
                     </button>
@@ -42,19 +41,32 @@
 
             <!-- Div for image -->
             <img src="images/image--me.png" id="BernardFuriatti_image">
-    
+            
+            <div id="Mobile--callToActions_container" >
+                <div id="Mobile--callToActions_socialMedia">
+                    <a href="https://www.instagram.com/furiatti/"><img src="images/icon--instagram.svg" alt=""></a>
+                    <a href="https://dribbble.com/Furiatti/collections"><img src="images/icon--dribbble.svg" alt=""></a>
+                </div>
+                <button class="Button_container" >
+                <span class="fontStyle_Button Button_element">HIRE ME</span>
+                </button>
+            </div>
+
         </div>
     </section>
-    <section id="section_Brand">
-        <span class="fontStyle_Avenir--body2 fontStyle_Color-black">I've worked for</span>
-        <img id="Brand--bancoInter" src="images/image--bancoInter.png" alt="">
-        <img id="Brand--vale" src="images/image--vale.png" alt="">
-        <img id="Brand--mrv" src="images/image--mrv.png" alt="">
-        <img id="Brand--localizaHertz" src="images/image--localizaHertz.png" alt="">
-        <img id="Brand--falconi" src="images/image--falconi.png" alt="">
-        <img id="Brand--supermix" src="images/image--supermix.png" alt="">
-        <img id="Brand--duoGourmet" src="images/image--duoGourmet.png" alt="">
 
+
+    <section id="section_Brand">
+        <span id="section_Brand--title" class=" fontStyle_Color-black">I've worked for</span>
+        <div id="section_Brand--group">
+            <img id="Brand--bancoInter" src="images/image--bancoInter.png" alt="">
+            <img id="Brand--vale" src="images/image--vale.png" alt="">
+            <img id="Brand--mrv" src="images/image--mrv.png" alt="">
+            <img id="Brand--localizaHertz" src="images/image--localizaHertz.png" alt="">
+            <img id="Brand--falconi" src="images/image--falconi.png" alt="">
+            <img id="Brand--supermix" src="images/image--supermix.png" alt="">
+            <img id="Brand--duoGourmet" src="images/image--duoGourmet.png" alt="">
+        </div>
     </section>
     
 
