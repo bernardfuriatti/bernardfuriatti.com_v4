@@ -1,3 +1,25 @@
 /*
 *   File to define titles styles
 */
+
+#section_title--h1{
+    display: inline-block;
+    border-top: 8px solid;
+    
+
+    h1{
+        padding-top: 16px;
+        @include fontStyle_Bebas--headline1;
+    }
+
+    
+}
+#section_title--h6{
+    display: inline-block;
+    border-top: 4px solid;
+    
+    h6{
+        padding-top: 8px;
+        @include fontStyle_Bebas--headline6;
+    }
+}
