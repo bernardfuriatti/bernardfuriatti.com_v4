@@ -194,6 +194,34 @@
     }
 }
 
+/*
+* Footer
+*/
+
+#section_footer {
+	padding: 24px 24px 24px 24px;
+	box-sizing: border-box;
+
+	#footer_container {
+		display: flex;
+		height: 20vh;
+
+		align-items: center;
+		justify-content: center;
+
+		border-radius: 2px;
+		box-shadow: 2px 2px 8px 0 rgba(0, 0, 0, 0.32);
+		background-color: #17171a;
+
+		#BernardFuriatti--body {
+			@include fontStyle_Avenir--body2;
+		}
+
+		#BernardFuriatti--title {
+			@include fontStyle_Bebas--headline1;
+		}
+	}
+}
 
 
 //ATEN"CÃO TROCA MEDIA ABAIXO
