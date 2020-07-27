@@ -199,10 +199,11 @@
 */
 
 #section_footer {
-	padding: 24px 24px 24px 24px;
+	padding: 24px;
 	box-sizing: border-box;
 
 	#footer_container {
+		padding: 64px;
 		display: flex;
 		flex-direction: row;
 
@@ -217,12 +218,20 @@
 			margin: 0;
 		}
 
-		#BernardFuriatti--body {
+		#footer--body {
 			@include fontStyle_Avenir--body2;
 		}
 
-		#BernardFuriatti--title {
+		#footer--body2 {
+			@include fontStyle_Avenir--caption;
+		}
+
+		#footer--title {
 			@include fontStyle_Bebas--headline1;
+		}
+
+		#footer_signature {
+			padding-left: 80px;
 		}
 	}
 }

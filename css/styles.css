@@ -691,10 +691,11 @@ h1, h2, h3, h4, h5, h6 {
 * Footer
 */
 #section_footer {
-  padding: 24px 24px 24px 24px;
+  padding: 24px;
   box-sizing: border-box;
 }
 #section_footer #footer_container {
+  padding: 64px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -706,7 +707,7 @@ h1, h2, h3, h4, h5, h6 {
 #section_footer #footer_container p {
   margin: 0;
 }
-#section_footer #footer_container #BernardFuriatti--body {
+#section_footer #footer_container #footer--body {
   opacity: 80%;
   font-family: "Avenir";
   font-style: italic;
@@ -714,12 +715,22 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 12px;
   line-height: 24px;
 }
-#section_footer #footer_container #BernardFuriatti--title {
+#section_footer #footer_container #footer--body2 {
+  font-family: "Avenir";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 12px;
+  line-height: 24px;
+}
+#section_footer #footer_container #footer--title {
   font-family: "Bebas Neue";
   font-weight: 600;
   font-size: 96px;
   line-height: 88px;
   text-transform: uppercase;
+}
+#section_footer #footer_container #footer_signature {
+  padding-left: 80px;
 }
 
 @media only screen and (max-width: 1920px) and (min-width: 1281px) {
