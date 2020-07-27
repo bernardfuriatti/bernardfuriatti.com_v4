@@ -696,12 +696,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 #section_footer #footer_container {
   display: flex;
-  height: 20vh;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   border-radius: 2px;
   box-shadow: 2px 2px 8px 0 rgba(0, 0, 0, 0.32);
   background-color: #17171a;
+}
+#section_footer #footer_container p {
+  margin: 0;
 }
 #section_footer #footer_container #BernardFuriatti--body {
   opacity: 80%;
