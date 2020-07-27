@@ -1,0 +1,7 @@
+.badge{
+    @include fontStyle_Avenir--caption;
+    padding: 8px;
+    background-color: white;
+    border-radius: 2px;
+    text-transform: uppercase;
+}

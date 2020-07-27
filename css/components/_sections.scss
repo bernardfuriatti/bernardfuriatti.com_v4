@@ -6,509 +6,770 @@
 *   Section 1
 */
 #section_BernardFuriatti {
-    position: relative;
-    z-index: 2;
+	position: relative;
+	z-index: 2;
 
-    padding-left: 24px;
-    padding-top: 24px;
-    padding-right: 24px;
+	padding-left: 24px;
+	padding-top: 24px;
+	padding-right: 24px;
 
-    box-sizing: border-box;
+	box-sizing: border-box;
 
-    #BernardFuriatti_container {
-        display: flex;
-        height: 85vh;
+	#BernardFuriatti_container {
+		display: flex;
+		height: 85vh;
 
-        align-items: center;
-        justify-content: center;
+		align-items: center;
+		justify-content: center;
 
-        border-radius: 2px;
-        box-shadow: 2px 2px 8px 0 rgba(0, 0, 0, 0.32);
-        background-color: #17171a;
+		border-radius: 2px;
+		box-shadow: 2px 2px 8px 0 rgba(0, 0, 0, 0.32);
+		background-color: #17171a;
 
-        #BernardFuriatti--body {
-            @include fontStyle_Avenir--body2;
-        }
+		#BernardFuriatti--body {
+			@include fontStyle_Avenir--body2;
+		}
 
-        #BernardFuriatti--title {
-            @include fontStyle_Bebas--headline1;
-        }
+		#BernardFuriatti--title {
+			@include fontStyle_Bebas--headline1;
+		}
 
-        #BernardFuriatti_image {
-            mix-blend-mode: lighten;
-            height: 90%;
-            float: right;
-            padding-left: 80px;
-        }
+		#BernardFuriatti_image {
+			mix-blend-mode: lighten;
+			height: 90%;
+			float: right;
+			padding-left: 80px;
+		}
 
-        .callToActions_container {
-            display: flex;
-            justify-content: flex-end;
-            align-items: center;
-            margin-top: 8vh;
+		.callToActions_container {
+			display: flex;
+			justify-content: flex-end;
+			align-items: center;
+			margin-top: 8vh;
 
-            a,
-            button {
-                margin-left: 16px;
-                margin-right: 16px;
-            }
-        }
+			a,
+			button {
+				margin-left: 16px;
+				margin-right: 16px;
+			}
+		}
 
-        #Mobile--callToActions_container {
-            display: none;
-        }
-    }
+		#Mobile--callToActions_container {
+			display: none;
+		}
+	}
 }
 
 /*
 * Section 2
 */
 #section_Brand {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 
-    position: relative;
-    z-index: 0;
-    top: -8px;
+	position: relative;
+	z-index: 0;
+	top: -8px;
 
-    border-top: 1px solid $divider-color;
-    border-bottom: 1px solid $divider-color;
+	border-top: 1px solid $divider-color;
+	border-bottom: 1px solid $divider-color;
 
-    padding-left: 24px;
-    padding-right: 24px;
-    padding-top: 32px;
-    padding-bottom: 32px;
+	padding-left: 24px;
+	padding-right: 24px;
+	padding-top: 32px;
+	padding-bottom: 32px;
 
-    #section_Brand--title {
-        @include fontStyle_Avenir--body2;
-    }
+	#section_Brand--title {
+		@include fontStyle_Avenir--body2;
+	}
 
-    img {
-        height: 32px;
-        margin-right: 2vw;
-        margin-left: 2vw;
-    }
+	img {
+		height: 32px;
+		margin-right: 2vw;
+		margin-left: 2vw;
+	}
 }
 
 /*
 * Section 3
 */
 #section_aboutMe {
-    display: flex;
-    min-height: 40vh;
-    width: 100vw;
+	display: flex;
+	min-height: 40vh;
+	width: 100vw;
 
-    align-items: center;
-    justify-content: center;
+	align-items: center;
+	justify-content: center;
 
-    padding-left: 32px;
-    padding-right: 32px;
+	padding-left: 32px;
+	padding-right: 32px;
     box-sizing: border-box;
+    
+  
 
-    #aboutMe_title--container {
-        width: 25%;
-        padding-right: 80px;
+	#aboutMe_title--container {
+		width: 25%;
+		padding-right: 80px;
 
-        div {
-            float: right;
+		div {
+			float: right;
+		}
+	}
+	#aboutMe_container {
+		display: flex;
+		width: 50%;
+		box-sizing: border-box;
+
+		padding-left: 40px;
+	}
+	.aboutMe_body {
+		padding-right: 32px;
+
+		@include fontStyle_Avenir--body2;
+	}
+}
+
+/*
+* Section 4 - My Projects
+*/
+#section_myProjects {
+    padding-top: 40px;
+
+	#section_myProjects--title {
+		display: flex;
+		justify-content: center;
+		margin: 40px;
+	}
+	width: 100vw;
+	background-color: $primary-color;
+
+	.section_myProjects--banner {
+		display: flex;
+		align-items: center;
+        justify-content: center;
+        margin-bottom: 32px;
+
+		.section_myProjects--content {
+			width: 30vw;
+
+			h4 {
+				@include fontStyle_Avenir--headline4;
+				padding-bottom: 32px;
+				padding-top: 16px;
+			}
+
+			p {
+				@include fontStyle_Avenir--body1;
+				padding-bottom: 48px;
+			}
+		}
+
+		img {
+			padding-left: 5vw;
+			width: 40vw;
+            mix-blend-mode: lighten;
+            margin-bottom: 16px;
+		}
+    }
+    
+     /*
+    *   Section 5 Banner 2
+    */
+    #section_myProjects--banner2{
+        justify-content: flex-start !important;
+
+        img{
+            padding-left: 0;
+            padding-right: 10vw;
+            width: 40vw;
+            height: auto;
+            width: auto !important;
+            height: 60vh !important;
+ 
         }
-    }
-    #aboutMe_container {
-        display: flex;
-        width: 50%;
-        box-sizing: border-box;
 
-        padding-left: 40px;
-    }
-    .aboutMe_body {
-        padding-right: 32px;
-
-        @include fontStyle_Avenir--body2;
+       
+    
     }
 }
+
+
 
 //ATEN"CÃO TROCA MEDIA ABAIXO
 @media only screen and (max-width: 1920px) and (min-width: 1281px) {
-    /* hi-res laptops and desktops */
+	/* hi-res laptops and desktops */
 
-    /*
+	/*
     * Section 2
     */
-    #section_Brand {
-        img {
-            height: 32px;
-        }
-    }
+	#section_Brand {
+		img {
+			height: 32px;
+		}
+	}
 }
 @media only screen and (max-width: 1280px) and (min-width: 1025px) {
-    /* big landscape tablets, laptops, and desktops */
+	/* big landscape tablets, laptops, and desktops */
 
-    /*
+	/*
     * Section 2
     */
-    #section_Brand {
-        img {
-            height: 24px;
-        }
-    }
+	#section_Brand {
+		img {
+			height: 24px;
+		}
+	}
 }
 @media only screen and (max-width: 1024px) and (min-width: 961px) {
-    /* tablet, landscape iPad, lo-res laptops ands desktops */
+	/* tablet, landscape iPad, lo-res laptops ands desktops */
 
-    /*
+	/*
     * Section 2
     */
-    #section_Brand {
-        img {
-            height: 24px;
-        }
+	#section_Brand {
+		img {
+			height: 24px;
+		}
+	}
+
+	/*
+* Section 4 - My Projects
+*/
+	#section_myProjects {
+		padding-bottom: 40px;
+
+		.section_myProjects--banner {
+			.section_myProjects--content {
+				width: 30vw;
+				img {
+					width: 40vw;
+					height: auto;
+				}
+			}
+		}
     }
+    
+   
 }
 @media only screen and (max-width: 960px) and (min-width: 641px) {
-    /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+	/* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
 
-    /*
+	/*
     * Section 1
     */
-    #section_BernardFuriatti {
-        #BernardFuriatti_container #BernardFuriatti_image {
-            mix-blend-mode: lighten;
-            height: 60%;
-            float: right;
-            padding-left: 64px;
-        }
-    }
-    /*
+	#section_BernardFuriatti {
+		#BernardFuriatti_container #BernardFuriatti_image {
+			mix-blend-mode: lighten;
+			height: 60%;
+			float: right;
+			padding-left: 64px;
+		}
+	}
+	/*
     * Section 2
     */
-    #section_Brand {
-        img {
-            height: 24px;
-        }
-        #Brand--duoGourmet {
-            display: none;
-        }
-    }
+	#section_Brand {
+		img {
+			height: 24px;
+		}
+		#Brand--duoGourmet {
+			display: none;
+		}
+	}
 
-     /*
+	/*
     * Section 3
     */
-    #section_aboutMe {
-        display: flex;
-        height: auto;
+	#section_aboutMe {
+		display: flex;
+		height: auto;
 
-        flex-direction: column;
+		flex-direction: column;
 
-        padding-top: 32px;
+		padding-top: 32px;
 
-        #aboutMe_title--container {
-            width: 100%;
-            padding-right: 0;
+		#aboutMe_title--container {
+			width: 100%;
+			padding-right: 0;
 
-            div {
-                float: left;
-                h1 {
-                    @include fontStyle_Bebas--headline2;
-                }
-            }
-        }
+			div {
+				float: left;
+				h1 {
+					@include fontStyle_Bebas--headline2;
+				}
+			}
+		}
 
-        #aboutMe_container {
+		#aboutMe_container {
+			display: flex;
+
+			width: 100%;
+
+			box-sizing: border-box;
+			padding-left: 0;
+			padding-bottom: 24px;
+			#aboutMe_body1 {
+				padding-right: 24px;
+			}
+			.aboutMe_body {
+				padding-right: 0;
+			}
+		}
+	}
+
+	/*
+* Section 4 - My Projects
+*/
+	#section_myProjects {
+		padding-top: 8px;
+		padding-bottom: 8px;
+		#section_myProjects--title {
+			display: flex;
+			justify-content: center;
+			margin: 40px;
+		}
+		width: 100vw;
+		background-color: $primary-color;
+
+		.section_myProjects--banner {
+			display: flex;
+			flex-direction: column;
+			padding-left: 24px;
+			padding-right: 24px;
+
+			.section_myProjects--content {
+				width: auto;
+
+				h4 {
+					@include fontStyle_Avenir--headline5;
+					padding-bottom: 8px;
+					padding-top: 24px;
+				}
+
+				p {
+					@include fontStyle_Avenir--body1;
+					padding-bottom: 24px;
+				}
+			}
+
+			img {
+				order: -1;
+				padding-left: 0;
+				height: 50vh;
+				mix-blend-mode: lighten;
+			}
+		}
+    }
+    /*
+    *   Section 5 Banner 2
+    */
+    #section_myProjects--banner2{
+
+        img{
             display: flex;
-
-            width: 100%;
-
-            box-sizing: border-box;
-            padding-left: 0;
-            #aboutMe_body1{
-                padding-right: 24px;
-            }
-            .aboutMe_body {
-                padding-right: 0;
-                
-            }
+            align-self: flex-start;
+            margin-left: -24px;
+            width: auto !important;
+            height: 50vh !important;
         }
-       
     }
 }
 @media only screen and (max-width: 640px) and (min-width: 481px) {
-    /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+	/* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
 
-    /*
+	/*
     * Section 1
     */
-    #section_BernardFuriatti {
-        padding-left: 8px;
-        padding-top: 8px;
-        padding-right: 8px;
+	#section_BernardFuriatti {
+		padding-left: 8px;
+		padding-top: 8px;
+		padding-right: 8px;
 
-        #BernardFuriatti_container {
-            display: flex;
+		#BernardFuriatti_container {
+			display: flex;
 
-            align-items: center;
-            justify-content: space-between;
-            flex-direction: column;
+			align-items: center;
+			justify-content: space-between;
+			flex-direction: column;
 
-            box-sizing: border-box;
-            padding: 24px;
+			box-sizing: border-box;
+			padding: 24px;
 
-            #BernardFuriatti_container--group {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-            }
+			#BernardFuriatti_container--group {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+			}
 
-            #BernardFuriatti--body {
-                @include fontStyle_Avenir--body2;
-                text-align: center;
-            }
+			#BernardFuriatti--body {
+				@include fontStyle_Avenir--body2;
+				text-align: center;
+			}
 
-            #BernardFuriatti--title {
-                @include fontStyle_Bebas--headline3;
+			#BernardFuriatti--title {
+				@include fontStyle_Bebas--headline3;
 
-                br {
-                    display: none;
-                }
-            }
+				br {
+					display: none;
+				}
+			}
 
-            #BernardFuriatti_image {
-                height: 50vh;
-                padding: 0;
+			#BernardFuriatti_image {
+				height: 50vh;
+				padding: 0;
 
-                -webkit-transform: scaleX(-1);
-                transform: scaleX(-1);
-            }
+				-webkit-transform: scaleX(-1);
+				transform: scaleX(-1);
+			}
 
-            .callToActions_container {
-                display: none;
-            }
+			.callToActions_container {
+				display: none;
+			}
 
-            #Mobile--callToActions_container {
-                display: flex;
-                width: 100%;
-                justify-content: space-between;
+			#Mobile--callToActions_container {
+				display: flex;
+				width: 100%;
+				justify-content: space-between;
 
-                a {
-                    padding-right: 24px;
-                }
-            }
-        }
-    }
+				a {
+					padding-right: 24px;
+				}
+			}
+		}
+	}
 
-    /*
+	/*
     * Section 2
     */
-    #section_Brand {
-        display: block;
+	#section_Brand {
+		display: block;
 
-        padding-top: 16px;
-        padding-bottom: 16px;
+		padding-top: 16px;
+		padding-bottom: 16px;
 
-        img {
-            height: 24px;
-        }
+		img {
+			height: 24px;
+		}
 
-        #Brand--supermix {
-            display: none;
-        }
-        #Brand--duoGourmet {
-            display: none;
-        }
+		#Brand--supermix {
+			display: none;
+		}
+		#Brand--duoGourmet {
+			display: none;
+		}
 
-        #section_Brand--title {
-            display: flex;
-            justify-content: center;
-            margin-bottom: 8px;
-        }
-        #section_Brand--group {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-    }
+		#section_Brand--title {
+			display: flex;
+			justify-content: center;
+			margin-bottom: 8px;
+		}
+		#section_Brand--group {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+	}
 
-    /*
+	/*
     * Section 3
     */
 
-    #section_aboutMe {
-        display: flex;
-        height: auto;
+	#section_aboutMe {
+		display: flex;
+		height: auto;
 
-        flex-direction: column;
+		flex-direction: column;
 
-        padding-top: 32px;
+		padding-top: 32px;
 
-        #aboutMe_title--container {
-            width: 100%;
-            padding-right: 0;
+		#aboutMe_title--container {
+			width: 100%;
+			padding-right: 0;
 
-            div {
-                float: left;
-                h1 {
-                    @include fontStyle_Bebas--headline2;
-                }
-            }
-        }
+			div {
+				float: left;
+				h1 {
+					@include fontStyle_Bebas--headline2;
+				}
+			}
+		}
 
-        #aboutMe_container {
-            display: flex;
+		#aboutMe_container {
+			display: flex;
 
-            width: 100%;
+			width: 100%;
 
-            box-sizing: border-box;
-            padding-left: 0;
-            #aboutMe_body1{
-                padding-right: 24px;
-            }
-            .aboutMe_body {
-                padding-right: 0;
-                
-            }
-        }
-       
+			box-sizing: border-box;
+			padding-left: 0;
+			padding-bottom: 24px;
+			#aboutMe_body1 {
+				padding-right: 24px;
+			}
+			.aboutMe_body {
+				padding-right: 0;
+			}
+		}
+	}
+
+	/*
+* Section 4 - My Projects
+*/
+	#section_myProjects {
+		padding-top: 8px;
+		padding-bottom: 8px;
+		#section_myProjects--title {
+			display: flex;
+			justify-content: center;
+			margin: 40px;
+		}
+		width: 100vw;
+		background-color: $primary-color;
+
+		.section_myProjects--banner {
+			display: flex;
+			flex-direction: column;
+			padding-left: 24px;
+			padding-right: 24px;
+
+			.section_myProjects--content {
+				width: auto;
+
+				h4 {
+					@include fontStyle_Avenir--headline5;
+					padding-bottom: 8px;
+					padding-top: 24px;
+				}
+
+				p {
+					@include fontStyle_Avenir--body1;
+					padding-bottom: 24px;
+				}
+			}
+
+			img {
+				order: -1;
+				padding-left: 0;
+                height: 70vh;
+                width: auto;
+				mix-blend-mode: lighten;
+			}
+		}
     }
+    
+    /*
+    *   Section 5 Banner 2
+    */
+    #section_myProjects--banner2{
+
+        img{
+            display: flex;
+            align-self: flex-start;
+            margin-left: -24px;
+            width: auto !important;
+            height: 50vh !important;
+        }
+    }
+
 }
 @media only screen and (max-width: 480px) and (min-width: 0) {
-    /* smartphones, iPhone, portrait 480x320 phones */
-    /*
+	/* smartphones, iPhone, portrait 480x320 phones */
+	/*
     * Section 1
     */
-    #section_BernardFuriatti {
-        padding-left: 8px;
-        padding-top: 8px;
-        padding-right: 8px;
+	#section_BernardFuriatti {
+		padding-left: 8px;
+		padding-top: 8px;
+		padding-right: 8px;
 
-        #BernardFuriatti_container {
-            display: flex;
+		#BernardFuriatti_container {
+			display: flex;
 
-            align-items: center;
-            justify-content: space-between;
-            flex-direction: column;
+			align-items: center;
+			justify-content: space-between;
+			flex-direction: column;
 
-            box-sizing: border-box;
-            padding: 24px;
+			box-sizing: border-box;
+			padding: 24px;
 
-            #BernardFuriatti_container--group {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-            }
+			#BernardFuriatti_container--group {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+			}
 
-            #BernardFuriatti--body {
-                @include fontStyle_Avenir--body2;
-                text-align: center;
-            }
+			#BernardFuriatti--body {
+				@include fontStyle_Avenir--body2;
+				text-align: center;
+			}
 
-            #BernardFuriatti--title {
-                @include fontStyle_Bebas--headline4;
+			#BernardFuriatti--title {
+				@include fontStyle_Bebas--headline5;
 
-                br {
-                    display: none;
-                }
-            }
+				br {
+					display: none;
+				}
+			}
 
-            #BernardFuriatti_image {
-                height: 50vh;
-                padding: 0;
+			#BernardFuriatti_image {
+				height: 50vh;
+				padding: 0;
 
-                -webkit-transform: scaleX(-1);
-                transform: scaleX(-1);
-            }
+				-webkit-transform: scaleX(-1);
+				transform: scaleX(-1);
+			}
 
-            .callToActions_container {
-                display: none;
-            }
+			.callToActions_container {
+				display: none;
+			}
 
-            #Mobile--callToActions_container {
-                display: flex;
-                width: 100%;
-                justify-content: space-between;
+			#Mobile--callToActions_container {
+				display: flex;
+				width: 100%;
+				justify-content: space-between;
 
-                a {
-                    padding-right: 24px;
-                }
-            }
-        }
-    }
+				a {
+					padding-right: 24px;
+				}
+			}
+		}
+	}
 
-    /*
+	/*
     * Section 2
     */
-    #section_Brand {
-        display: block;
+	#section_Brand {
+		display: block;
 
-        padding-top: 16px;
-        padding-bottom: 16px;
+		padding-top: 16px;
+		padding-bottom: 16px;
 
-        img {
-            height: 32px;
-            
-        }
+		img {
+			height: 32px;
+		}
 
-        #Brand--localizaHertz {
-            display: none;
-        }
+		#Brand--localizaHertz {
+			display: none;
+		}
 
-        #Brand--falconi {
-            display: none;
-        }
+		#Brand--falconi {
+			display: none;
+		}
 
-        #Brand--supermix {
-            display: none;
-        }
-        #Brand--duoGourmet {
-            display: none;
-        }
+		#Brand--supermix {
+			display: none;
+		}
+		#Brand--duoGourmet {
+			display: none;
+		}
 
-        #section_Brand--title {
-            display: flex;
-            justify-content: center;
-            margin-bottom: 16px;
-        }
-        #section_Brand--group {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-    }
+		#section_Brand--title {
+			display: flex;
+			justify-content: center;
+			margin-bottom: 16px;
+		}
+		#section_Brand--group {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+	}
 
-    /*
+	/*
     * Section 3
     */
 
-    #section_aboutMe {
-        display: flex;
-        height: auto;
+	#section_aboutMe {
+		display: flex;
+		height: auto;
 
-        flex-direction: column;
+		flex-direction: column;
 
-        padding-top: 32px;
+		padding-top: 32px;
 
-        #aboutMe_title--container {
-            width: 100%;
-            padding-right: 0;
+		#aboutMe_title--container {
+			width: 100%;
+			padding-right: 0;
 
-            div {
-                float: left;
-                h1 {
-                    @include fontStyle_Bebas--headline2;
-                }
-            }
-        }
+			div {
+				float: left;
+				h1 {
+					@include fontStyle_Bebas--headline2;
+				}
+			}
+		}
 
-        #aboutMe_container {
+		#aboutMe_container {
+			display: flex;
+			flex-direction: column;
+
+			width: 100%;
+
+			box-sizing: border-box;
+			padding-left: 0;
+			padding-bottom: 24px;
+		}
+		.aboutMe_body {
+			padding-right: 0;
+		}
+	}
+
+	/*
+* Section 4 - My Projects
+*/
+	#section_myProjects {
+		padding-top: 8px;
+		padding-bottom: 8px;
+		#section_myProjects--title {
+			display: flex;
+			justify-content: center;
+			margin: 40px;
+		}
+		width: 100vw;
+		background-color: $primary-color;
+
+		.section_myProjects--banner {
+			display: flex;
+			flex-direction: column;
+			padding-left: 24px;
+			padding-right: 24px;
+
+			.section_myProjects--content {
+				width: auto;
+
+				h4 {
+					@include fontStyle_Avenir--headline5;
+					padding-bottom: 8px;
+					padding-top: 24px;
+				}
+
+				p {
+					@include fontStyle_Avenir--body1;
+					padding-bottom: 24px;
+				}
+			}
+
+			img {
+				order: -1;
+				padding-left: 0;
+				height: auto;
+				width: 95vw;
+				mix-blend-mode: lighten;
+			}
+		}
+    }
+    
+    /*
+    *   Section 5 Banner 2
+    */
+    #section_myProjects--banner2{
+
+        img{
             display: flex;
-            flex-direction: column;
-
-            width: 100%;
-
-            box-sizing: border-box;
-            padding-left: 0;
-        }
-        .aboutMe_body {
-            padding-right: 0;
+            align-self: flex-start;
+            margin-left: -24px;
+            width: auto !important;
+            height: 50vh !important;
         }
     }
 }

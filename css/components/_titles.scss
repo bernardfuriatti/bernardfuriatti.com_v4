@@ -16,10 +16,10 @@
 }
 #section_title--h6{
     display: inline-block;
-    border-top: 4px solid;
     
-    h6{
-        padding-top: 8px;
-        @include fontStyle_Bebas--headline6;
-    }
+    border-top: 4px solid;
+    padding-top: 8px;
+
+    @include fontStyle_Bebas--headline6;
+
 }
