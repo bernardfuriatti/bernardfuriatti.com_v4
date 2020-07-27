@@ -729,6 +729,18 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 88px;
   text-transform: uppercase;
 }
+#section_footer #footer_container .callToActions_container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 32px;
+}
+#section_footer #footer_container .callToActions_container a {
+  margin-right: 16px;
+}
+#section_footer #footer_container .callToActions_container button {
+  margin-left: 16px;
+}
 #section_footer #footer_container #footer_signature {
   padding-left: 80px;
 }

@@ -230,6 +230,20 @@
 			@include fontStyle_Bebas--headline1;
 		}
 
+		.callToActions_container {
+			display: flex;
+			justify-content: flex-start;
+			align-items: center;
+			margin-top: 32px;
+
+			a {
+				margin-right: 16px;
+			}
+			button {
+				margin-left: 16px;
+			}
+		}
+
 		#footer_signature {
 			padding-left: 80px;
 		}
