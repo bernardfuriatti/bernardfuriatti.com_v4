@@ -1342,6 +1342,11 @@ h1, h2, h3, h4, h5, h6 {
   #section_footer #footer_container {
     flex-direction: column;
   }
+  #section_footer #footer_container #footer_signature {
+    padding-top: 80px;
+    padding-left: 0px;
+    align-items: center;
+  }
 }
 /*
 *   File to apply styles on any lines
