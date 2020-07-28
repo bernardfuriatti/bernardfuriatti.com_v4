@@ -800,6 +800,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 #section_footer #footer_container #footer_signature {
   padding-left: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 
 @media only screen and (max-width: 1920px) and (min-width: 1281px) {

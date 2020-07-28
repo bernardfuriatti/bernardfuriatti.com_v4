@@ -319,6 +319,9 @@
 
 		#footer_signature {
 			padding-left: 80px;
+			display: flex;
+			flex-direction: column;
+			align-items: flex-end;
 		}
 	}
 }
