@@ -1335,6 +1335,13 @@ h1, h2, h3, h4, h5, h6 {
     width: auto !important;
     height: 50vh !important;
   }
+
+  /*
+  * Footer
+  */
+  #section_footer #footer_container {
+    flex-direction: column;
+  }
 }
 /*
 *   File to apply styles on any lines

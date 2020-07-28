@@ -849,8 +849,8 @@
 	}
 
 	/*
-* Section 4 - My Projects
-*/
+	* Section 4 - My Projects
+	*/
 	#section_myProjects {
 		padding-top: 8px;
 		padding-bottom: 8px;
@@ -905,5 +905,16 @@
             width: auto !important;
             height: 50vh !important;
         }
-    }
+	}
+	
+	/*
+	* Footer
+	*/
+
+	#section_footer {
+
+		#footer_container {
+			flex-direction: column;
+		}
+	}
 }
