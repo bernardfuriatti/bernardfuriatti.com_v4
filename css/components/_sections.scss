@@ -134,7 +134,8 @@
 * Section 4 - My Projects
 */
 #section_myProjects {
-    padding-top: 40px;
+	padding-top: 40px;
+	padding-bottom: 80px;
 
 	#section_myProjects--title {
 		display: flex;
@@ -194,6 +195,78 @@
     }
 }
 
+.fourthSection_moreProject{
+	background-color: $primary-color;
+	
+    .moreProject_Element{
+        display: inline-block;
+        width: 450px;
+        // box-sizing: border-box;
+        border: black 0px solid;
+
+        transition: border linear 0.3s;
+        padding: 48px 24px;
+        
+
+        .element--Id{
+            display: flex;
+		}
+		
+		h4{
+			padding-top: 32px;
+			@include fontStyle_Avenir--headline4;
+		}
+        
+        p{
+            position: relative;
+			max-width: 80%;
+			margin-bottom: 32px;
+		}
+
+		img{
+			max-height: 80vh;
+		}
+
+    }
+
+    // .moreProject_Element:hover{
+    //     border: white 12px solid;
+    // }
+
+    p{
+        @include fontStyle_Avenir--body1;
+    }
+
+    .moreProject_grid{
+        display: grid;
+        grid-template-areas:    'space0 element0'
+                                'element1 element0'
+                                'element1 element2'
+                                'space1 element2';
+                                width: 75vw;
+                                margin: auto;
+    }
+	.title--0{
+		grid-area: space0;
+		justify-self: center;
+
+	}
+    .element--0{
+        grid-area: element0;
+    }
+    .element--1{
+        grid-area: element1;
+    }
+    .element--2{
+        grid-area: element2;
+    }
+
+    
+}
+
+
+
+
 /*
 * Footer
 */
@@ -249,6 +322,8 @@
 		}
 	}
 }
+
+
 
 
 //ATEN"CÃO TROCA MEDIA ABAIXO

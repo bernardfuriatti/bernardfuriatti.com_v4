@@ -632,6 +632,7 @@ h1, h2, h3, h4, h5, h6 {
 */
 #section_myProjects {
   padding-top: 40px;
+  padding-bottom: 80px;
   width: 100vw;
   background-color: #17171A;
   /*
@@ -685,6 +686,62 @@ h1, h2, h3, h4, h5, h6 {
   height: auto;
   width: auto !important;
   height: 60vh !important;
+}
+
+.fourthSection_moreProject {
+  background-color: #17171A;
+}
+.fourthSection_moreProject .moreProject_Element {
+  display: inline-block;
+  width: 450px;
+  border: black 0px solid;
+  transition: border linear 0.3s;
+  padding: 48px 24px;
+}
+.fourthSection_moreProject .moreProject_Element .element--Id {
+  display: flex;
+}
+.fourthSection_moreProject .moreProject_Element h4 {
+  padding-top: 32px;
+  font-family: "Avenir";
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 32px;
+}
+.fourthSection_moreProject .moreProject_Element p {
+  position: relative;
+  max-width: 80%;
+  margin-bottom: 32px;
+}
+.fourthSection_moreProject .moreProject_Element img {
+  max-height: 80vh;
+}
+.fourthSection_moreProject p {
+  opacity: 80%;
+  font-family: "Avenir";
+  font-style: italic;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 24px;
+}
+.fourthSection_moreProject .moreProject_grid {
+  display: grid;
+  grid-template-areas: "space0 element0" "element1 element0" "element1 element2" "space1 element2";
+  width: 75vw;
+  margin: auto;
+}
+.fourthSection_moreProject .title--0 {
+  grid-area: space0;
+  justify-self: center;
+}
+.fourthSection_moreProject .element--0 {
+  grid-area: element0;
+}
+.fourthSection_moreProject .element--1 {
+  grid-area: element1;
+}
+.fourthSection_moreProject .element--2 {
+  grid-area: element2;
 }
 
 /*
