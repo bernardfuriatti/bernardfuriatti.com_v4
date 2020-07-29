@@ -185,15 +185,11 @@
             padding-left: 0;
 			padding-right: 10vw;
 			box-sizing: border-box;
-            // width: 40vw;
-            // height: auto;
-            // width: auto !important;
-            // height: 60vh !important;
  
         }
 
        
-    
+
     }
 }
 
@@ -771,7 +767,6 @@
 	/*
     * Section 3
     */
-
 	#section_aboutMe {
 		display: flex;
 		height: auto;
@@ -848,6 +843,11 @@
 				height: auto;
 				width: 95vw;
 				mix-blend-mode: lighten;
+			}
+		}
+		#section_myProjects--banner2{
+			img{
+				margin-left:-24px;
 			}
 		}
     }
