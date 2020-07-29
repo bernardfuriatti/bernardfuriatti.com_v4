@@ -647,7 +647,7 @@ h1, h2, h3, h4, h5, h6 {
 #section_myProjects .section_myProjects--banner {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
   margin-bottom: 32px;
 }
 #section_myProjects .section_myProjects--banner .section_myProjects--content {
@@ -672,7 +672,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 #section_myProjects .section_myProjects--banner img {
   padding-left: 5vw;
-  width: 40vw;
+  height: auto;
+  width: 50vw;
   mix-blend-mode: lighten;
   margin-bottom: 16px;
 }
@@ -682,10 +683,7 @@ h1, h2, h3, h4, h5, h6 {
 #section_myProjects #section_myProjects--banner2 img {
   padding-left: 0;
   padding-right: 10vw;
-  width: 40vw;
-  height: auto;
-  width: auto !important;
-  height: 60vh !important;
+  box-sizing: border-box;
 }
 
 .fourthSection_moreProject {
@@ -714,7 +712,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 32px;
 }
 .fourthSection_moreProject .moreProject_Element img {
-  width: 400px;
+  max-height: 80vh;
 }
 .fourthSection_moreProject p {
   opacity: 80%;
@@ -727,7 +725,7 @@ h1, h2, h3, h4, h5, h6 {
 .fourthSection_moreProject .moreProject_grid {
   display: grid;
   grid-template-areas: "space0 element0" "element1 element0" "element1 element2" "space1 element2";
-  width: 80vw;
+  width: 75vw;
   margin: auto;
 }
 .fourthSection_moreProject .title--0 {
@@ -778,6 +776,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 900;
   font-size: 12px;
   line-height: 24px;
+  margin-top: 32px;
 }
 #section_footer #footer_container #footer--title {
   font-family: "Bebas Neue";
@@ -800,6 +799,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 #section_footer #footer_container #footer_signature {
   padding-left: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 
 @media only screen and (max-width: 1920px) and (min-width: 1281px) {
@@ -827,20 +829,6 @@ h1, h2, h3, h4, h5, h6 {
      */
   #section_Brand img {
     height: 24px;
-  }
-
-  /*
-  * Section 4 - My Projects
-  */
-  #section_myProjects {
-    padding-bottom: 40px;
-  }
-  #section_myProjects .section_myProjects--banner .section_myProjects--content {
-    width: 30vw;
-  }
-  #section_myProjects .section_myProjects--banner .section_myProjects--content img {
-    width: 40vw;
-    height: auto;
   }
 }
 @media only screen and (max-width: 960px) and (min-width: 641px) {
@@ -944,20 +932,9 @@ h1, h2, h3, h4, h5, h6 {
   }
   #section_myProjects .section_myProjects--banner img {
     order: -1;
-    padding-left: 0;
     height: 50vh;
+    width: auto;
     mix-blend-mode: lighten;
-  }
-
-  /*
-  *   Section 5 Banner 2
-  */
-  #section_myProjects--banner2 img {
-    display: flex;
-    align-self: flex-start;
-    margin-left: -24px;
-    width: auto !important;
-    height: 50vh !important;
   }
 }
 @media only screen and (max-width: 640px) and (min-width: 481px) {
@@ -1127,21 +1104,8 @@ h1, h2, h3, h4, h5, h6 {
   }
   #section_myProjects .section_myProjects--banner img {
     order: -1;
-    padding-left: 0;
-    height: 70vh;
-    width: auto;
+    width: 50vw;
     mix-blend-mode: lighten;
-  }
-
-  /*
-  *   Section 5 Banner 2
-  */
-  #section_myProjects--banner2 img {
-    display: flex;
-    align-self: flex-start;
-    margin-left: -24px;
-    width: auto !important;
-    height: 50vh !important;
   }
 }
 @media only screen and (max-width: 480px) and (min-width: 0) {
@@ -1274,14 +1238,63 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   /*
-  *   Section 5 Banner 2
+  * Section 4 - My Projects
   */
-  #section_myProjects--banner2 img {
+  #section_myProjects {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    width: 100vw;
+    background-color: #17171A;
+  }
+  #section_myProjects #section_myProjects--title {
     display: flex;
-    align-self: flex-start;
-    margin-left: -24px;
-    width: auto !important;
-    height: 50vh !important;
+    justify-content: center;
+    margin: 40px;
+  }
+  #section_myProjects .section_myProjects--banner {
+    display: flex;
+    flex-direction: column;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  #section_myProjects .section_myProjects--banner .section_myProjects--content {
+    width: auto;
+  }
+  #section_myProjects .section_myProjects--banner .section_myProjects--content h4 {
+    font-family: "Avenir";
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 24px;
+    padding-bottom: 8px;
+    padding-top: 24px;
+  }
+  #section_myProjects .section_myProjects--banner .section_myProjects--content p {
+    opacity: 80%;
+    font-family: "Avenir";
+    font-style: italic;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 24px;
+    padding-bottom: 24px;
+  }
+  #section_myProjects .section_myProjects--banner img {
+    order: -1;
+    padding-left: 0;
+    height: auto;
+    width: 95vw;
+    mix-blend-mode: lighten;
+  }
+
+  /*
+  * Footer
+  */
+  #section_footer #footer_container {
+    flex-direction: column;
+  }
+  #section_footer #footer_container #footer_signature {
+    padding-top: 80px;
+    padding-left: 0px;
+    align-items: center;
   }
 }
 /*

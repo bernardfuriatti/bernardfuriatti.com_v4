@@ -148,7 +148,7 @@
 	.section_myProjects--banner {
 		display: flex;
 		align-items: center;
-        justify-content: center;
+        justify-content: flex-end;
         margin-bottom: 32px;
 
 		.section_myProjects--content {
@@ -168,7 +168,8 @@
 
 		img {
 			padding-left: 5vw;
-			width: 40vw;
+			height: auto;
+			width: 50vw;
             mix-blend-mode: lighten;
             margin-bottom: 16px;
 		}
@@ -182,11 +183,12 @@
 
         img{
             padding-left: 0;
-            padding-right: 10vw;
-            width: 40vw;
-            height: auto;
-            width: auto !important;
-            height: 60vh !important;
+			padding-right: 10vw;
+			box-sizing: border-box;
+            // width: 40vw;
+            // height: auto;
+            // width: auto !important;
+            // height: 60vh !important;
  
         }
 
@@ -367,22 +369,6 @@
 		}
 	}
 
-	/*
-* Section 4 - My Projects
-*/
-	#section_myProjects {
-		padding-bottom: 40px;
-
-		.section_myProjects--banner {
-			.section_myProjects--content {
-				width: 30vw;
-				img {
-					width: 40vw;
-					height: auto;
-				}
-			}
-		}
-    }
     
    
 }
@@ -489,24 +475,11 @@
 
 			img {
 				order: -1;
-				padding-left: 0;
 				height: 50vh;
+				width:auto;
 				mix-blend-mode: lighten;
 			}
 		}
-    }
-    /*
-    *   Section 5 Banner 2
-    */
-    #section_myProjects--banner2{
-
-        img{
-            display: flex;
-            align-self: flex-start;
-            margin-left: -24px;
-            width: auto !important;
-            height: 50vh !important;
-        }
     }
 }
 @media only screen and (max-width: 640px) and (min-width: 481px) {
@@ -683,27 +656,13 @@
 
 			img {
 				order: -1;
-				padding-left: 0;
-                height: 70vh;
-                width: auto;
+                
+                width: 50vw;
 				mix-blend-mode: lighten;
 			}
 		}
     }
     
-    /*
-    *   Section 5 Banner 2
-    */
-    #section_myProjects--banner2{
-
-        img{
-            display: flex;
-            align-self: flex-start;
-            margin-left: -24px;
-            width: auto !important;
-            height: 50vh !important;
-        }
-    }
 
 }
 @media only screen and (max-width: 480px) and (min-width: 0) {
@@ -893,19 +852,7 @@
 		}
     }
     
-    /*
-    *   Section 5 Banner 2
-    */
-    #section_myProjects--banner2{
-
-        img{
-            display: flex;
-            align-self: flex-start;
-            margin-left: -24px;
-            width: auto !important;
-            height: 50vh !important;
-        }
-	}
+   
 	
 	/*
 	* Footer
