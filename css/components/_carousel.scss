@@ -1,0 +1,73 @@
+.carousel-cell {
+	width: 100vw; /* full width */
+	height: 100vh; /* height of carousel */
+	// margin-right: 10px;
+}
+
+/* smaller, dark, rounded square */
+.flickity-button {
+	background: #333;
+}
+.flickity-button:hover {
+	background: #f90;
+}
+
+.flickity-prev-next-button {
+	width: 24px;
+	height: 24px;
+	border-radius: 0px;
+}
+/* icon color */
+.flickity-button-icon {
+	fill: white;
+}
+/* position outside */
+.flickity-prev-next-button.previous {
+	left: 24px;
+}
+.flickity-prev-next-button.next {
+	right: 24px
+}
+
+.Mobile_fourthSection_moreProject {
+	// display: block;
+    padding-left: 24px;
+    padding-right: 24px;
+
+    background-color: $primary-color;
+    #section_title--h1{ 
+        // margin-left: 24px;
+
+        
+        h1 {
+            @include fontStyle_Bebas--headline2;
+        }
+    }
+   
+
+	.moreProject_Element {
+		padding: 48px 24px;
+
+		.element--Id {
+			display: flex;
+			
+			img {
+				width: 70vw;
+			}
+		}
+		
+		h4 {
+			padding-top: 32px;
+			@include fontStyle_Avenir--headline4;
+		}
+
+		p {
+			position: relative;
+			max-width: 80%;
+			margin-bottom: 32px;
+		}
+	}
+	p {
+		@include fontStyle_Avenir--body1;
+	}
+}

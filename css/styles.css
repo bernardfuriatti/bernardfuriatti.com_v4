@@ -636,8 +636,8 @@ h1, h2, h3, h4, h5, h6 {
   width: 100vw;
   background-color: #17171A;
   /*
-  *   Section 5 Banner 2
-  */
+     *   Section 5 Banner 2
+     */
 }
 #section_myProjects #section_myProjects--title {
   display: flex;
@@ -691,7 +691,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .fourthSection_moreProject .moreProject_Element {
   display: inline-block;
-  width: 450px;
+  width: 30vw;
   border: black 0px solid;
   transition: border linear 0.3s;
   padding: 48px 24px;
@@ -712,7 +712,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 32px;
 }
 .fourthSection_moreProject .moreProject_Element img {
-  max-height: 80vh;
+  width: 100%;
 }
 .fourthSection_moreProject p {
   opacity: 80%;
@@ -725,8 +725,9 @@ h1, h2, h3, h4, h5, h6 {
 .fourthSection_moreProject .moreProject_grid {
   display: grid;
   grid-template-areas: "space0 element0" "element1 element0" "element1 element2" "space1 element2";
-  width: 75vw;
+  width: 80vw;
   margin: auto;
+  justify-content: center;
 }
 .fourthSection_moreProject .title--0 {
   grid-area: space0;
@@ -740,6 +741,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 .fourthSection_moreProject .element--2 {
   grid-area: element2;
+}
+
+.Mobile_fourthSection_moreProject {
+  display: none;
 }
 
 /*
@@ -932,9 +937,41 @@ h1, h2, h3, h4, h5, h6 {
   }
   #section_myProjects .section_myProjects--banner img {
     order: -1;
-    height: 50vh;
-    width: auto;
+    padding-left: 0;
+    height: auto;
+    width: 95vw;
     mix-blend-mode: lighten;
+  }
+  #section_myProjects #section_myProjects--banner2 img {
+    margin-left: -24px;
+  }
+
+  .fourthSection_moreProject {
+    background-color: #17171A;
+  }
+  .fourthSection_moreProject #section_title--h1 h1 {
+    font-family: "Bebas Neue";
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 56px;
+    text-transform: uppercase;
+  }
+  .fourthSection_moreProject .moreProject_Element {
+    width: 40vw;
+  }
+  .fourthSection_moreProject h4 {
+    padding-top: 32px;
+    font-family: "Avenir";
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 24px;
+  }
+  .fourthSection_moreProject .moreProject_grid {
+    width: 90vw;
+  }
+  .fourthSection_moreProject .moreProject_grid .space0 {
+    justify-content: center;
+    display: flex;
   }
 }
 @media only screen and (max-width: 640px) and (min-width: 481px) {
@@ -1104,8 +1141,24 @@ h1, h2, h3, h4, h5, h6 {
   }
   #section_myProjects .section_myProjects--banner img {
     order: -1;
-    width: 50vw;
+    padding-left: 0;
+    height: auto;
+    width: 95vw;
     mix-blend-mode: lighten;
+  }
+  #section_myProjects #section_myProjects--banner2 img {
+    margin-left: -24px;
+  }
+
+  /*
+  * Section 4.1 - Other projects
+  */
+  .fourthSection_moreProject {
+    display: none;
+  }
+
+  .Mobile_fourthSection_moreProject {
+    display: block;
   }
 }
 @media only screen and (max-width: 480px) and (min-width: 0) {
@@ -1289,6 +1342,17 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   /*
+  * Section 4.1 - Other projects
+  */
+  .fourthSection_moreProject {
+    display: none;
+  }
+
+  .Mobile_fourthSection_moreProject {
+    display: block;
+  }
+
+  /*
   * Footer
   */
   #section_footer #footer_container {
@@ -1328,6 +1392,84 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 24px;
   line-height: 20px;
   text-transform: uppercase;
+}
+
+.carousel-cell {
+  width: 100vw;
+  /* full width */
+  height: 100vh;
+  /* height of carousel */
+}
+
+/* smaller, dark, rounded square */
+.flickity-button {
+  background: #333;
+}
+
+.flickity-button:hover {
+  background: #f90;
+}
+
+.flickity-prev-next-button {
+  width: 24px;
+  height: 24px;
+  border-radius: 0px;
+}
+
+/* icon color */
+.flickity-button-icon {
+  fill: white;
+}
+
+/* position outside */
+.flickity-prev-next-button.previous {
+  left: 24px;
+}
+
+.flickity-prev-next-button.next {
+  right: 24px;
+}
+
+.Mobile_fourthSection_moreProject {
+  padding-left: 24px;
+  padding-right: 24px;
+  background-color: #17171A;
+}
+.Mobile_fourthSection_moreProject #section_title--h1 h1 {
+  font-family: "Bebas Neue";
+  font-weight: 600;
+  font-size: 72px;
+  line-height: 64px;
+  text-transform: uppercase;
+}
+.Mobile_fourthSection_moreProject .moreProject_Element {
+  padding: 48px 24px;
+}
+.Mobile_fourthSection_moreProject .moreProject_Element .element--Id {
+  display: flex;
+}
+.Mobile_fourthSection_moreProject .moreProject_Element .element--Id img {
+  width: 70vw;
+}
+.Mobile_fourthSection_moreProject .moreProject_Element h4 {
+  padding-top: 32px;
+  font-family: "Avenir";
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 32px;
+}
+.Mobile_fourthSection_moreProject .moreProject_Element p {
+  position: relative;
+  max-width: 80%;
+  margin-bottom: 32px;
+}
+.Mobile_fourthSection_moreProject p {
+  opacity: 80%;
+  font-family: "Avenir";
+  font-style: italic;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 24px;
 }
 
 a {
