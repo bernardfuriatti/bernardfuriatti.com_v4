@@ -187,6 +187,9 @@
 	}
 }
 
+/*
+* Section 4.1 - More projects
+*/
 .fourthSection_moreProject {
 	background-color: $primary-color;
 
@@ -252,15 +255,100 @@
 		grid-area: element2;
 	}
 }
-
+/*
+* Section 4.1 - More projects (Mobile)
+*/
 .Mobile_fourthSection_moreProject {
 	display: none;
 }
 
 /*
+* Section 5 - Who I've Designed For
+*/
+.section_who{
+	display: flex;
+	justify-content: center;
+
+	height: 90vh;
+	width: 100vw;
+	
+	background: linear-gradient(180deg, $primary-color  50%, white 50%);
+	
+	
+
+	.who_container{
+		width: 70vw;
+		justify-content: center;
+		display: flex;		
+	}
+
+	.who_content{
+		p{
+			@include fontStyle_Avenir--body1;
+			width: 80%;
+		}
+
+	}
+	.brands_grid{
+		display: inline-grid;
+		height: 80%;
+
+		grid-template-areas:    'brand1 brand2'
+								'brand3 brand4'
+								'brand5 brand6'
+								'brand7 brand8';
+		grid-column-gap: 8vw;
+		padding:40px;
+		background-color: white;
+		
+
+		align-items: center;
+		justify-items: center;
+
+		img{
+			height: 50px;
+		}
+		
+		
+
+	}
+
+	.brand--1{
+		
+		grid-area: brand1;
+	}
+	.brand--2{
+		
+		grid-area: brand2;
+	}
+	.brand--3{
+		grid-area: brand3;
+	}
+	.brand--4{
+		grid-area: brand4;
+	}
+	.brand--5{
+		grid-area: brand5;
+	}
+	.brand--6{
+		grid-area: brand6;
+	}
+	.brand--7{
+		grid-area: brand7;
+	}
+	.brand--8{
+		grid-area: brand8;
+	}
+
+
+
+}
+		
+
+
+/*
 * Footer
 */
-
 #section_footer {
 	padding: 24px;
 	box-sizing: border-box;
