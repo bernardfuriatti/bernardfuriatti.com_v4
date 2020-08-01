@@ -884,6 +884,10 @@ h1, h2, h3, h4, h5, h6 {
   flex-direction: column;
   align-items: flex-end;
 }
+#section_footer #footer_container #footer_signature #signature-image {
+  padding-top: 24px;
+  height: 48px;
+}
 #section_footer #mobile-footer_signature {
   display: none;
 }
@@ -1477,6 +1481,11 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 300;
     font-size: 14px;
     line-height: 24px;
+  }
+  #section_footer #mobile-footer_signature #signature-image {
+    color: red;
+    padding-top: 24px;
+    height: 48px;
   }
 }
 /*

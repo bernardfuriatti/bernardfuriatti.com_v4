@@ -408,6 +408,11 @@
 			display: flex;
 			flex-direction: column;
 			align-items: flex-end;
+
+			#signature-image {
+				padding-top: 24px;
+				height: 48px;
+			}
 		}
 	}
 
@@ -1037,6 +1042,12 @@
 
 			#footer--body {
 				@include fontStyle_Avenir--body1;
+			}
+
+			#signature-image {
+				color: red;
+				padding-top: 24px;
+				height: 48px;
 			}
 		}
 	}
