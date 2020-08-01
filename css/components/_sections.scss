@@ -266,33 +266,44 @@
 * Section 5 - Who I've Designed For
 */
 .section_who{
-	display: flex;
-	justify-content: center;
-
 	height: 90vh;
 	width: 100vw;
 	
-	background: linear-gradient(180deg, $primary-color  50%, white 50%);
 	
-	
-
 	.who_container{
-		width: 70vw;
-		justify-content: center;
-		display: flex;		
+		position: relative;
+		padding-left: 17.5%;
+		padding-right: 17.5%;
+		box-sizing: border-box;
+		background-color: black;
+	}
+	
+	.who_container--title{
+
+		background-color: $primary-color;
+
+	}
+	.who_Brands{
+		position: absolute;
+		right: 17.5%;
+		top: 0;
+		height: 200%;
+	
 	}
 
-	.who_content{
+	.who_container--info{
+		width: 65%;
+		background-color: red;
+		margin: auto;
 		p{
-			@include fontStyle_Avenir--body1;
-			width: 80%;
+			width:35%;
 		}
+		
 
 	}
 	.brands_grid{
 		display: inline-grid;
-		height: 80%;
-
+		height: 100%;
 		grid-template-areas:    'brand1 brand2'
 								'brand3 brand4'
 								'brand5 brand6'
@@ -300,6 +311,7 @@
 		grid-column-gap: 8vw;
 		padding:40px;
 		background-color: white;
+		border: 12px solid $primary-color;
 		
 
 		align-items: center;
@@ -309,8 +321,6 @@
 			height: 50px;
 		}
 		
-		
-
 	}
 
 	.brand--1{
@@ -340,11 +350,8 @@
 		grid-area: brand8;
 	}
 
-
-
 }
 		
-
 
 /*
 * Footer
