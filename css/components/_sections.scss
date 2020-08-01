@@ -315,6 +315,10 @@
 			align-items: flex-end;
 		}
 	}
+
+	#mobile-footer_signature {
+		display: none;
+	}
 }
 
 //ATEN"CÃO TROCA MEDIA ABAIXO
@@ -911,6 +915,33 @@
 
 			#footer_signature {
 				display: none;
+			}
+
+			#footer--body {
+				@include fontStyle_Avenir--body1;
+			}
+	
+			#footer--body2 {
+				@include fontStyle_Avenir--subtitle1;
+				margin-top: 32px;
+			}
+	
+			#footer--title {
+				@include fontStyle_Bebas--headline1;
+			}
+
+		}
+
+		#mobile-footer_signature {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			padding-top: 24px;
+			padding-bottom: 24px;
+
+			#footer--body {
+				@include fontStyle_Avenir--body1;
 			}
 		}
 	}
