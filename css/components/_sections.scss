@@ -908,12 +908,9 @@
 		padding: 8px;
 
 		#footer_container {
-			flex-direction: column;
 
 			#footer_signature {
-				padding-top: 80px;
-				padding-left: 0px;
-				align-items: center;
+				display: none;
 			}
 		}
 	}
