@@ -135,6 +135,7 @@
 	padding-top: 40px;
 	padding-bottom: 80px;
 
+
 	#section_myProjects--title {
 		display: flex;
 		justify-content: center;
@@ -192,6 +193,7 @@
 */
 .fourthSection_moreProject {
 	background-color: $primary-color;
+	margin-top: -1px;
 
 	.moreProject_Element {
 		display: inline-block;
@@ -240,6 +242,8 @@
 		width: 80vw;
 		margin: auto;
 		justify-content: center;
+		grid-column-gap: 8vw;
+		grid-row-gap: 8vh;
 	}
 	.title--0 {
 		grid-area: space0;
@@ -266,41 +270,40 @@
 * Section 5 - Who I've Designed For
 */
 .section_who{
-	height: 90vh;
-	width: 100vw;
 	
-	
+	display: flex;
+	height: 80vh;
+	align-items: center;
+	justify-content: center;
+	background: linear-gradient(180deg, #17171A 50%, white 50%);
+	padding-left: 17.5%;
+	padding-right: 17.5%;
+
+	margin-bottom: 10vh;
+	margin-top: -1px;
+
+
+
 	.who_container{
-		position: relative;
-		padding-left: 17.5%;
-		padding-right: 17.5%;
-		box-sizing: border-box;
-		background-color: black;
-	}
+		height: 100%;
+
+		padding-right: 8vw;
+
 	
-	.who_container--title{
 
-		background-color: $primary-color;
-
-	}
-	.who_Brands{
-		position: absolute;
-		right: 17.5%;
-		top: 0;
-		height: 200%;
-	
-	}
-
-	.who_container--info{
-		width: 65%;
-		background-color: red;
-		margin: auto;
-		p{
-			width:35%;
+		.who_container--title{
+			display: flex;
+			align-items: center;
+			
+			height: 50%;
 		}
-		
-
 	}
+	
+	.who_container--info{
+		width: 80%;
+		@include fontStyle_Avenir--body1;
+	}
+
 	.brands_grid{
 		display: inline-grid;
 		height: 100%;
@@ -312,7 +315,7 @@
 		padding:40px;
 		background-color: white;
 		border: 12px solid $primary-color;
-		
+		box-sizing: border-box;
 
 		align-items: center;
 		justify-items: center;
