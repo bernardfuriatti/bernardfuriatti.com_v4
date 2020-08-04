@@ -517,56 +517,28 @@
 			}
 		}
 	}
-
-	/*
+/*
 * Section 4 - My Projects
 */
-	#section_myProjects {
-		padding-top: 8px;
-		padding-bottom: 80px;
-		#section_myProjects--title {
-			display: flex;
-			justify-content: center;
-			margin: 40px;
-		}
-		width: 100vw;
-		background-color: $primary-color;
+#section_myProjects {
+	padding-top: 40px;
+	padding-bottom: 80px;
 
-		.section_myProjects--banner {
-			display: flex;
-			flex-direction: column;
-			padding-left: 24px;
-			padding-right: 24px;
 
-			.section_myProjects--content {
-				width: auto;
-
-				h4 {
-					@include fontStyle_Avenir--headline5;
-					padding-bottom: 8px;
-					padding-top: 24px;
-				}
-
-				p {
-					@include fontStyle_Avenir--body1;
-					padding-bottom: 24px;
-				}
-			}
-
-			img {
-				order: -1;
-				padding-left: 0;
-				height: auto;
-				width: 95vw;
-				mix-blend-mode: lighten;
-			}
-		}
-		#section_myProjects--banner2 {
-			img {
-				margin-left: -24px;
-			}
+	.section_myProjects--banner {
+	
+		.section_myProjects--content {
+			width: 40vw;
 		}
 	}
+
+	/*
+    *   Section 5 Banner 2
+    */
+	#section_myProjects--banner2 {
+		justify-content: flex-start !important;
+	}
+}
 
 	.fourthSection_moreProject {
 		background-color: $primary-color;

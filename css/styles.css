@@ -1067,51 +1067,17 @@ h1, h2, h3, h4, h5, h6 {
   * Section 4 - My Projects
   */
   #section_myProjects {
-    padding-top: 8px;
+    padding-top: 40px;
     padding-bottom: 80px;
-    width: 100vw;
-    background-color: #17171A;
-  }
-  #section_myProjects #section_myProjects--title {
-    display: flex;
-    justify-content: center;
-    margin: 40px;
-  }
-  #section_myProjects .section_myProjects--banner {
-    display: flex;
-    flex-direction: column;
-    padding-left: 24px;
-    padding-right: 24px;
+    /*
+       *   Section 5 Banner 2
+       */
   }
   #section_myProjects .section_myProjects--banner .section_myProjects--content {
-    width: auto;
+    width: 40vw;
   }
-  #section_myProjects .section_myProjects--banner .section_myProjects--content h4 {
-    font-family: "Avenir";
-    font-weight: 900;
-    font-size: 24px;
-    line-height: 24px;
-    padding-bottom: 8px;
-    padding-top: 24px;
-  }
-  #section_myProjects .section_myProjects--banner .section_myProjects--content p {
-    opacity: 80%;
-    font-family: "Avenir";
-    font-style: italic;
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 24px;
-    padding-bottom: 24px;
-  }
-  #section_myProjects .section_myProjects--banner img {
-    order: -1;
-    padding-left: 0;
-    height: auto;
-    width: 95vw;
-    mix-blend-mode: lighten;
-  }
-  #section_myProjects #section_myProjects--banner2 img {
-    margin-left: -24px;
+  #section_myProjects #section_myProjects--banner2 {
+    justify-content: flex-start !important;
   }
 
   .fourthSection_moreProject {
