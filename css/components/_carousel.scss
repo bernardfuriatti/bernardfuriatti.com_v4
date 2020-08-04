@@ -4,29 +4,61 @@
 	// margin-right: 10px;
 }
 
+.flickity-viewport{
+	height: 90vh !important;
+}
+
 /* smaller, dark, rounded square */
 .flickity-button {
-	background: #333;
+	background: $primary-color !important; 
+	position: relative !important;
+	// margin-right: 16px;
+	margin-top: 8px;
+
+
 }
 .flickity-button:hover {
-	background: #f90;
+	background: $primary-color !important;
 }
 
 .flickity-prev-next-button {
-	width: 24px;
-	height: 24px;
-	border-radius: 0px;
+	// top: 50%;
+    width: 24px;
+    height: 24px;
+	border-radius: 4% !important;
+	transform: none !important;
+	
 }
 /* icon color */
 .flickity-button-icon {
-	fill: white;
+	fill: white !important;
 }
 /* position outside */
 .flickity-prev-next-button.previous {
-	left: 24px;
+	position: relative !important;
+	left: auto !important;
+	z-index: 100;
 }
 .flickity-prev-next-button.next {
-	right: 24px
+	position: relative !important;
+	left: auto !important;
+	z-index: 100;
+
+}
+
+.flickity-page-dots{
+	position: relative !important;
+	top: -32px;
+    display: inline-block !important;
+    bottom: auto !important;
+
+
+
+	.dot{
+		background: hsla(0,0%,100%,.75) !important;
+	}
+
+
 }
 
 .Mobile_fourthSection_moreProject {
@@ -46,7 +78,7 @@
    
 
 	.moreProject_Element {
-		padding: 48px 24px;
+		padding: 8px 8px;
 
 		.element--Id {
 			display: flex;

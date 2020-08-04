@@ -135,7 +135,6 @@
 	padding-top: 40px;
 	padding-bottom: 80px;
 
-
 	#section_myProjects--title {
 		display: flex;
 		justify-content: center;
@@ -269,50 +268,46 @@
 /*
 * Section 5 - Who I've Designed For
 */
-.section_who{
-	
+.section_who {
 	display: flex;
 	height: 80vh;
 	align-items: center;
 	justify-content: center;
-	background: linear-gradient(180deg, #17171A 50%, white 50%);
+	background: linear-gradient(180deg, #17171a 50%, white 50%);
 	padding-left: 17.5%;
 	padding-right: 17.5%;
 
 	margin-bottom: 10vh;
 	margin-top: -1px;
 
-
-
-	.who_container{
+	.who_container {
 		height: 100%;
 
 		padding-right: 8vw;
 
-	
-
-		.who_container--title{
+		.who_container--title {
 			display: flex;
 			align-items: center;
-			
+
 			height: 50%;
 		}
 	}
-	
-	.who_container--info{
+
+	.who_container--info {
 		width: 80%;
 		@include fontStyle_Avenir--body1;
 	}
 
-	.brands_grid{
+	.brands_grid {
 		display: inline-grid;
 		height: 100%;
-		grid-template-areas:    'brand1 brand2'
-								'brand3 brand4'
-								'brand5 brand6'
-								'brand7 brand8';
+		grid-template-areas:
+			"brand1 brand2"
+			"brand3 brand4"
+			"brand5 brand6"
+			"brand7 brand8";
 		grid-column-gap: 8vw;
-		padding:40px;
+		padding: 40px;
 		background-color: white;
 		border: 12px solid $primary-color;
 		box-sizing: border-box;
@@ -320,41 +315,36 @@
 		align-items: center;
 		justify-items: center;
 
-		img{
+		img {
 			height: 50px;
 		}
-		
 	}
 
-	.brand--1{
-		
+	.brand--1 {
 		grid-area: brand1;
 	}
-	.brand--2{
-		
+	.brand--2 {
 		grid-area: brand2;
 	}
-	.brand--3{
+	.brand--3 {
 		grid-area: brand3;
 	}
-	.brand--4{
+	.brand--4 {
 		grid-area: brand4;
 	}
-	.brand--5{
+	.brand--5 {
 		grid-area: brand5;
 	}
-	.brand--6{
+	.brand--6 {
 		grid-area: brand6;
 	}
-	.brand--7{
+	.brand--7 {
 		grid-area: brand7;
 	}
-	.brand--8{
+	.brand--8 {
 		grid-area: brand8;
 	}
-
 }
-		
 
 /*
 * Footer
@@ -425,7 +415,7 @@
 }
 
 //ATEN"CÃO TROCA MEDIA ABAIXO
-@media only screen and (max-width: 1920px) and (min-width: 1281px) {
+@media only screen and (max-width: 1920px) and (min-width: 1367px) {
 	/* hi-res laptops and desktops */
 
 	/*
@@ -532,7 +522,7 @@
 */
 	#section_myProjects {
 		padding-top: 8px;
-		padding-bottom: 8px;
+		padding-bottom: 80px;
 		#section_myProjects--title {
 			display: flex;
 			justify-content: center;
@@ -587,7 +577,10 @@
 		}
 
 		.moreProject_Element {
-			width: 40vw;
+			width: auto;
+			p{
+				max-width: 100%;
+			}
 		}
 
 		h4 {
@@ -601,6 +594,61 @@
 			.space0 {
 				justify-content: center;
 				display: flex;
+			}
+		}
+	}
+		/*
+	* Section 5 - Who I've Designed For
+	*/
+	.section_who {
+		display: flex;
+		height: auto;
+		flex-direction: column;
+
+		padding-left: 24px;
+		padding-right: 24px;
+
+		padding-top: 80px;
+
+		background: linear-gradient(180deg, $primary-color 85%, white 50%);
+
+		.who_container {
+			height: auto;
+
+			padding-right: 0;
+
+			#section_title--h1 {
+				h1 {
+					@include fontStyle_Bebas--headline2;
+				}
+			}
+		}
+
+		.who_container--info {
+			width: 100%;
+			p {
+				@include fontStyle_Avenir--body1;
+				color: white;
+			}
+		}
+
+		.brands_grid {
+			display: inline-grid;
+			height: 100%;
+			grid-template-areas:
+				"brand1 brand2"
+				"brand3 brand4"
+				"brand5 brand6"
+				"brand7 brand8";
+			grid-column-gap: 10vw;
+			grid-row-gap: 10vw;
+
+			align-items: center;
+			justify-items: center;
+			border: 6px solid $primary-color;
+
+			img {
+				height: 48px;
 			}
 		}
 	}
@@ -803,6 +851,108 @@
 
 		//css style is on carousel.scss
 	}
+	/*
+	* Section 5 - Who I've Designed For
+	*/
+	.section_who {
+		display: flex;
+		height: auto;
+		flex-direction: column;
+
+		padding-left: 24px;
+		padding-right: 24px;
+
+		padding-top: 80px;
+
+		background: linear-gradient(180deg, $primary-color 85%, white 50%);
+
+		.who_container {
+			height: auto;
+
+			padding-right: 0;
+
+			#section_title--h1 {
+				h1 {
+					@include fontStyle_Bebas--headline2;
+				}
+			}
+		}
+
+		.who_container--info {
+			width: 100%;
+			p {
+				@include fontStyle_Avenir--body1;
+				color: white;
+			}
+		}
+
+		.brands_grid {
+			display: inline-grid;
+			height: 100%;
+			grid-template-areas:
+				"brand1 brand2"
+				"brand3 brand4"
+				"brand5 brand6"
+				"brand7 brand8";
+			grid-column-gap: 10vw;
+			grid-row-gap: 10vw;
+
+			align-items: center;
+			justify-items: center;
+			border: 6px solid $primary-color;
+
+			img {
+				height: 40px;
+			}
+		}
+	}
+		/*
+	* Footer
+	*/
+
+	#section_footer {
+		padding: 8px;
+
+		#footer_container {
+
+			#footer_signature {
+				display: none;
+			}
+
+			#footer--body {
+				@include fontStyle_Avenir--body1;
+			}
+	
+			#footer--body2 {
+				@include fontStyle_Avenir--subtitle1;
+				margin-top: 32px;
+			}
+	
+			#footer--title {
+				@include fontStyle_Bebas--headline1;
+			}
+
+		}
+
+		#mobile-footer_signature {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			padding-top: 24px;
+			padding-bottom: 24px;
+
+			#footer--body {
+				@include fontStyle_Avenir--body1;
+			}
+
+			#signature-image {
+				color: red;
+				padding-top: 24px;
+				height: 48px;
+			}
+		}
+	}
 }
 @media only screen and (max-width: 480px) and (min-width: 0) {
 	/* smartphones, iPhone, portrait 480x320 phones */
@@ -861,7 +1011,7 @@
 				justify-content: space-between;
 
 				a {
-					padding-right: 24px;
+					padding-right: 32px;
 				}
 			}
 		}
@@ -950,7 +1100,7 @@
 	*/
 	#section_myProjects {
 		padding-top: 8px;
-		padding-bottom: 8px;
+		padding-bottom: 80px;
 		#section_myProjects--title {
 			display: flex;
 			justify-content: center;
@@ -1008,6 +1158,62 @@
 	}
 
 	/*
+* Section 5 - Who I've Designed For
+*/
+	.section_who {
+		display: flex;
+		height: auto;
+		flex-direction: column;
+
+		padding-left: 24px;
+		padding-right: 24px;
+
+		padding-top: 40px;
+
+		background: linear-gradient(180deg, $primary-color 85%, white 50%);
+
+		.who_container {
+			height: auto;
+
+			padding-right: 0;
+
+			#section_title--h1 {
+				h1 {
+					@include fontStyle_Bebas--headline2;
+				}
+			}
+		}
+
+		.who_container--info {
+			width: 100%;
+			p {
+				@include fontStyle_Avenir--body1;
+				color: white;
+			}
+		}
+
+		.brands_grid {
+			display: inline-grid;
+			height: 100%;
+			grid-template-areas:
+				"brand1 brand2"
+				"brand3 brand4"
+				"brand5 brand6"
+				"brand7 brand8";
+			grid-column-gap: 8vw;
+			grid-row-gap: 8vw;
+
+			align-items: center;
+			justify-items: center;
+			border: 6px solid $primary-color;
+
+			img {
+				height: 32px;
+			}
+		}
+	}
+
+	/*
 	* Footer
 	*/
 
@@ -1015,7 +1221,6 @@
 		padding: 8px;
 
 		#footer_container {
-
 			#footer_signature {
 				display: none;
 			}
@@ -1023,16 +1228,15 @@
 			#footer--body {
 				@include fontStyle_Avenir--body1;
 			}
-	
+
 			#footer--body2 {
 				@include fontStyle_Avenir--subtitle1;
 				margin-top: 32px;
 			}
-	
+
 			#footer--title {
 				@include fontStyle_Bebas--headline1;
 			}
-
 		}
 
 		#mobile-footer_signature {

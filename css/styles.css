@@ -460,6 +460,7 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   top: 0px;
   right: 0px;
+  -webkit-transition: all 0.5s ease-out 0s;
   transition: all 0.5s ease-out 0s;
   font-family: "Avenir";
   font-style: normal;
@@ -489,6 +490,84 @@ h1, h2, h3, h4, h5, h6 {
   outline: none;
 }
 
+@media only screen and (max-width: 960px) and (min-width: 641px) {
+  .Button_element {
+    background-color: #17171A;
+    position: relative;
+    top: 0px;
+    right: 0px;
+    -webkit-transition: all 0.5s ease 0s !important;
+    transition: all 0.5s ease 0s !important;
+    font-family: "Avenir";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 10px;
+    line-height: 16px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+
+  .Button_container:active .Button_element {
+    top: -12px !important;
+    right: -14px !important;
+    padding-right: 8px;
+    padding-left: 8px;
+    -webkit-transition: all 0.5s ease 0s !important;
+    transition: all 0.5s ease 0s !important;
+  }
+}
+@media only screen and (max-width: 640px) and (min-width: 481px) {
+  .Button_element {
+    background-color: #17171A;
+    position: relative;
+    top: 0px;
+    right: 0px;
+    -webkit-transition: all 0.5s ease 0s !important;
+    transition: all 0.5s ease 0s !important;
+    font-family: "Avenir";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 10px;
+    line-height: 16px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+
+  .Button_container:active .Button_element {
+    top: -12px !important;
+    right: -14px !important;
+    padding-right: 8px;
+    padding-left: 8px;
+    -webkit-transition: all 0.5s ease 0s !important;
+    transition: all 0.5s ease 0s !important;
+  }
+}
+@media only screen and (max-width: 480px) and (min-width: 0) {
+  .Button_element {
+    background-color: #17171A;
+    position: relative;
+    top: 0px;
+    right: 0px;
+    -webkit-transition: all 0.5s ease 0s !important;
+    transition: all 0.5s ease 0s !important;
+    font-family: "Avenir";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 10px;
+    line-height: 16px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+
+  .Button_container:active .Button_element {
+    top: -12px !important;
+    right: -14px !important;
+    padding-right: 8px;
+    padding-left: 8px;
+    -webkit-transition: all 0.5s ease 0s !important;
+    transition: all 0.5s ease 0s !important;
+  }
+}
 .badge {
   font-family: "Avenir";
   font-style: normal;
@@ -764,7 +843,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 80vh;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(180deg, #17171A 50%, white 50%);
+  background: linear-gradient(180deg, #17171a 50%, white 50%);
   padding-left: 17.5%;
   padding-right: 17.5%;
   margin-bottom: 10vh;
@@ -897,7 +976,7 @@ h1, h2, h3, h4, h5, h6 {
   display: none;
 }
 
-@media only screen and (max-width: 1920px) and (min-width: 1281px) {
+@media only screen and (max-width: 1920px) and (min-width: 1367px) {
   /* hi-res laptops and desktops */
   /*
      * Section 2
@@ -988,7 +1067,7 @@ h1, h2, h3, h4, h5, h6 {
   */
   #section_myProjects {
     padding-top: 8px;
-    padding-bottom: 8px;
+    padding-bottom: 80px;
     width: 100vw;
     background-color: #17171A;
   }
@@ -1045,7 +1124,10 @@ h1, h2, h3, h4, h5, h6 {
     text-transform: uppercase;
   }
   .fourthSection_moreProject .moreProject_Element {
-    width: 40vw;
+    width: auto;
+  }
+  .fourthSection_moreProject .moreProject_Element p {
+    max-width: 100%;
   }
   .fourthSection_moreProject h4 {
     padding-top: 32px;
@@ -1060,6 +1142,55 @@ h1, h2, h3, h4, h5, h6 {
   .fourthSection_moreProject .moreProject_grid .space0 {
     justify-content: center;
     display: flex;
+  }
+
+  /*
+  * Section 5 - Who I've Designed For
+  */
+  .section_who {
+    display: flex;
+    height: auto;
+    flex-direction: column;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 80px;
+    background: linear-gradient(180deg, #17171A 85%, white 50%);
+  }
+  .section_who .who_container {
+    height: auto;
+    padding-right: 0;
+  }
+  .section_who .who_container #section_title--h1 h1 {
+    font-family: "Bebas Neue";
+    font-weight: 600;
+    font-size: 72px;
+    line-height: 64px;
+    text-transform: uppercase;
+  }
+  .section_who .who_container--info {
+    width: 100%;
+  }
+  .section_who .who_container--info p {
+    opacity: 80%;
+    font-family: "Avenir";
+    font-style: italic;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 24px;
+    color: white;
+  }
+  .section_who .brands_grid {
+    display: inline-grid;
+    height: 100%;
+    grid-template-areas: "brand1 brand2" "brand3 brand4" "brand5 brand6" "brand7 brand8";
+    grid-column-gap: 10vw;
+    grid-row-gap: 10vw;
+    align-items: center;
+    justify-items: center;
+    border: 6px solid #17171A;
+  }
+  .section_who .brands_grid img {
+    height: 48px;
   }
 }
 @media only screen and (max-width: 640px) and (min-width: 481px) {
@@ -1248,6 +1379,108 @@ h1, h2, h3, h4, h5, h6 {
   .Mobile_fourthSection_moreProject {
     display: block;
   }
+
+  /*
+  * Section 5 - Who I've Designed For
+  */
+  .section_who {
+    display: flex;
+    height: auto;
+    flex-direction: column;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 80px;
+    background: linear-gradient(180deg, #17171A 85%, white 50%);
+  }
+  .section_who .who_container {
+    height: auto;
+    padding-right: 0;
+  }
+  .section_who .who_container #section_title--h1 h1 {
+    font-family: "Bebas Neue";
+    font-weight: 600;
+    font-size: 72px;
+    line-height: 64px;
+    text-transform: uppercase;
+  }
+  .section_who .who_container--info {
+    width: 100%;
+  }
+  .section_who .who_container--info p {
+    opacity: 80%;
+    font-family: "Avenir";
+    font-style: italic;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 24px;
+    color: white;
+  }
+  .section_who .brands_grid {
+    display: inline-grid;
+    height: 100%;
+    grid-template-areas: "brand1 brand2" "brand3 brand4" "brand5 brand6" "brand7 brand8";
+    grid-column-gap: 10vw;
+    grid-row-gap: 10vw;
+    align-items: center;
+    justify-items: center;
+    border: 6px solid #17171A;
+  }
+  .section_who .brands_grid img {
+    height: 40px;
+  }
+
+  /*
+  * Footer
+  */
+  #section_footer {
+    padding: 8px;
+  }
+  #section_footer #footer_container #footer_signature {
+    display: none;
+  }
+  #section_footer #footer_container #footer--body {
+    opacity: 80%;
+    font-family: "Avenir";
+    font-style: italic;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 24px;
+  }
+  #section_footer #footer_container #footer--body2 {
+    font-family: "Avenir";
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 32px;
+  }
+  #section_footer #footer_container #footer--title {
+    font-family: "Bebas Neue";
+    font-weight: 600;
+    font-size: 96px;
+    line-height: 88px;
+    text-transform: uppercase;
+  }
+  #section_footer #mobile-footer_signature {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+  #section_footer #mobile-footer_signature #footer--body {
+    opacity: 80%;
+    font-family: "Avenir";
+    font-style: italic;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 24px;
+  }
+  #section_footer #mobile-footer_signature #signature-image {
+    color: red;
+    padding-top: 24px;
+    height: 48px;
+  }
 }
 @media only screen and (max-width: 480px) and (min-width: 0) {
   /* smartphones, iPhone, portrait 480x320 phones */
@@ -1306,7 +1539,7 @@ h1, h2, h3, h4, h5, h6 {
     justify-content: space-between;
   }
   #section_BernardFuriatti #BernardFuriatti_container #Mobile--callToActions_container a {
-    padding-right: 24px;
+    padding-right: 32px;
   }
 
   /*
@@ -1383,7 +1616,7 @@ h1, h2, h3, h4, h5, h6 {
   */
   #section_myProjects {
     padding-top: 8px;
-    padding-bottom: 8px;
+    padding-bottom: 80px;
     width: 100vw;
     background-color: #17171A;
   }
@@ -1438,6 +1671,55 @@ h1, h2, h3, h4, h5, h6 {
 
   .Mobile_fourthSection_moreProject {
     display: block;
+  }
+
+  /*
+  * Section 5 - Who I've Designed For
+  */
+  .section_who {
+    display: flex;
+    height: auto;
+    flex-direction: column;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 40px;
+    background: linear-gradient(180deg, #17171A 85%, white 50%);
+  }
+  .section_who .who_container {
+    height: auto;
+    padding-right: 0;
+  }
+  .section_who .who_container #section_title--h1 h1 {
+    font-family: "Bebas Neue";
+    font-weight: 600;
+    font-size: 72px;
+    line-height: 64px;
+    text-transform: uppercase;
+  }
+  .section_who .who_container--info {
+    width: 100%;
+  }
+  .section_who .who_container--info p {
+    opacity: 80%;
+    font-family: "Avenir";
+    font-style: italic;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 24px;
+    color: white;
+  }
+  .section_who .brands_grid {
+    display: inline-grid;
+    height: 100%;
+    grid-template-areas: "brand1 brand2" "brand3 brand4" "brand5 brand6" "brand7 brand8";
+    grid-column-gap: 8vw;
+    grid-row-gap: 8vw;
+    align-items: center;
+    justify-items: center;
+    border: 6px solid #17171A;
+  }
+  .section_who .brands_grid img {
+    height: 32px;
   }
 
   /*
@@ -1530,33 +1812,54 @@ h1, h2, h3, h4, h5, h6 {
   /* height of carousel */
 }
 
+.flickity-viewport {
+  height: 90vh !important;
+}
+
 /* smaller, dark, rounded square */
 .flickity-button {
-  background: #333;
+  background: #17171A !important;
+  position: relative !important;
+  margin-top: 8px;
 }
 
 .flickity-button:hover {
-  background: #f90;
+  background: #17171A !important;
 }
 
 .flickity-prev-next-button {
   width: 24px;
   height: 24px;
-  border-radius: 0px;
+  border-radius: 4% !important;
+  transform: none !important;
 }
 
 /* icon color */
 .flickity-button-icon {
-  fill: white;
+  fill: white !important;
 }
 
 /* position outside */
 .flickity-prev-next-button.previous {
-  left: 24px;
+  position: relative !important;
+  left: auto !important;
+  z-index: 100;
 }
 
 .flickity-prev-next-button.next {
-  right: 24px;
+  position: relative !important;
+  left: auto !important;
+  z-index: 100;
+}
+
+.flickity-page-dots {
+  position: relative !important;
+  top: -32px;
+  display: inline-block !important;
+  bottom: auto !important;
+}
+.flickity-page-dots .dot {
+  background: rgba(255, 255, 255, 0.75) !important;
 }
 
 .Mobile_fourthSection_moreProject {
@@ -1572,7 +1875,7 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
 }
 .Mobile_fourthSection_moreProject .moreProject_Element {
-  padding: 48px 24px;
+  padding: 8px 8px;
 }
 .Mobile_fourthSection_moreProject .moreProject_Element .element--Id {
   display: flex;
