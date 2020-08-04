@@ -781,6 +781,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .fourthSection_moreProject .moreProject_Element .element--Id {
   display: flex;
+  align-items: flex-start;
 }
 .fourthSection_moreProject .moreProject_Element h4 {
   padding-top: 32px;
