@@ -570,61 +570,92 @@
 			}
 		}
 	}
-		/*
-	* Section 5 - Who I've Designed For
-	*/
-	.section_who {
-		display: flex;
-		height: auto;
-		flex-direction: column;
+	/*
+* Section 5 - Who I've Designed For
+*/
+.section_who {
+	display: flex;
+	height: 80vh;
+	align-items: center;
+	justify-content: center;
+	background: linear-gradient(180deg, #17171a 40%, white 40%);
+	padding-left: 17.5%;
+	padding-right: 17.5%;
 
-		padding-left: 24px;
-		padding-right: 24px;
+	margin-bottom: 10vh;
+	margin-top: -1px;
 
-		padding-top: 80px;
+	.who_container {
+		height: 100%;
 
-		background: linear-gradient(180deg, $primary-color 85%, white 50%);
+		padding-right: 8vw;
 
-		.who_container {
-			height: auto;
-
-			padding-right: 0;
-
-			#section_title--h1 {
-				h1 {
+		.who_container--title {
+			display: flex;
+			align-items: center;
+			#section_title--h1{
+				h1{
 					@include fontStyle_Bebas--headline2;
 				}
 			}
-		}
+		
+			height: 40%;
 
-		.who_container--info {
-			width: 100%;
-			p {
-				@include fontStyle_Avenir--body1;
-				color: white;
-			}
-		}
-
-		.brands_grid {
-			display: inline-grid;
-			height: 100%;
-			grid-template-areas:
-				"brand1 brand2"
-				"brand3 brand4"
-				"brand5 brand6"
-				"brand7 brand8";
-			grid-column-gap: 10vw;
-			grid-row-gap: 10vw;
-
-			align-items: center;
-			justify-items: center;
-			border: 6px solid $primary-color;
-
-			img {
-				height: 48px;
-			}
 		}
 	}
+
+	.who_container--info {
+		width: 100%;
+		@include fontStyle_Avenir--body1;
+	}
+
+	.brands_grid {
+		display: inline-grid;
+		height: 80%;
+		grid-template-areas:
+			"brand1 brand2"
+			"brand3 brand4"
+			"brand5 brand6"
+			"brand7 brand8";
+		grid-column-gap: 3vw;
+		padding: 8px 40px ;
+		background-color: white;
+		border: 12px solid $primary-color;
+		box-sizing: border-box;
+
+		align-items: center;
+		justify-items: center;
+
+		img {
+			height: 5vh;
+		}
+	}
+
+	.brand--1 {
+		grid-area: brand1;
+	}
+	.brand--2 {
+		grid-area: brand2;
+	}
+	.brand--3 {
+		grid-area: brand3;
+	}
+	.brand--4 {
+		grid-area: brand4;
+	}
+	.brand--5 {
+		grid-area: brand5;
+	}
+	.brand--6 {
+		grid-area: brand6;
+	}
+	.brand--7 {
+		grid-area: brand7;
+	}
+	.brand--8 {
+		grid-area: brand8;
+	}
+}
 }
 @media only screen and (max-width: 640px) and (min-width: 481px) {
 	/* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
