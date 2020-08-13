@@ -118,7 +118,7 @@ b{
 	box-sizing: border-box;
 
 	#aboutMe_title--container {
-		width: 25%;
+		// width: 25%;
 		padding-right: 80px;
 
 		div {
@@ -134,6 +134,8 @@ b{
 	}
 	.aboutMe_body {
 		padding-right: 32px;
+		width: 50%;
+		// text-indent: 8px;
 
 		@include fontStyle_Avenir--body2;
 	}
@@ -1107,6 +1109,8 @@ b{
 		}
 		.aboutMe_body {
 			padding-right: 0;
+			width: 100%;
+
 		}
 	}
 

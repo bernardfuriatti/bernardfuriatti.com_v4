@@ -702,7 +702,6 @@ b {
   box-sizing: border-box;
 }
 #section_aboutMe #aboutMe_title--container {
-  width: 25%;
   padding-right: 80px;
 }
 #section_aboutMe #aboutMe_title--container div {
@@ -716,6 +715,7 @@ b {
 }
 #section_aboutMe .aboutMe_body {
   padding-right: 32px;
+  width: 50%;
   opacity: 80%;
   font-family: "Avenir";
   font-style: italic;
@@ -1624,6 +1624,7 @@ b {
   }
   #section_aboutMe .aboutMe_body {
     padding-right: 0;
+    width: 100%;
   }
 
   /*
@@ -1888,9 +1889,6 @@ b {
   font-size: 72px;
   line-height: 64px;
   text-transform: uppercase;
-}
-.Mobile_fourthSection_moreProject .moreProject_Element {
-  padding: 8px 8px;
 }
 .Mobile_fourthSection_moreProject .moreProject_Element .element--Id {
   display: flex;
