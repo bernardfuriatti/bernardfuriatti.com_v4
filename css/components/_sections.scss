@@ -35,6 +35,10 @@ b{
 
 		#BernardFuriatti--body {
 			@include fontStyle_Avenir--body2;
+			width: 50%;
+			p::first-line{
+				padding-left: 25px;
+			}
 		}
 
 		#BernardFuriatti--title {

@@ -624,6 +624,10 @@ b {
   font-weight: 300;
   font-size: 12px;
   line-height: 24px;
+  width: 50%;
+}
+#section_BernardFuriatti #BernardFuriatti_container #BernardFuriatti--body p::first-line {
+  padding-left: 25px;
 }
 #section_BernardFuriatti #BernardFuriatti_container #BernardFuriatti--title {
   font-family: "Bebas Neue";
