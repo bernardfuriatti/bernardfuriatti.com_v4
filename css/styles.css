@@ -624,10 +624,6 @@ b {
   font-weight: 300;
   font-size: 12px;
   line-height: 24px;
-  width: 50%;
-}
-#section_BernardFuriatti #BernardFuriatti_container #BernardFuriatti--body p::first-line {
-  padding-left: 25px;
 }
 #section_BernardFuriatti #BernardFuriatti_container #BernardFuriatti--title {
   font-family: "Bebas Neue";
@@ -711,11 +707,13 @@ b {
   display: flex;
   width: 50%;
   box-sizing: border-box;
-  padding-left: 40px;
+}
+#section_aboutMe #aboutMe_container div {
+  width: 50%;
 }
 #section_aboutMe .aboutMe_body {
   padding-right: 32px;
-  width: 50%;
+  text-indent: 8px;
   opacity: 80%;
   font-family: "Avenir";
   font-style: italic;
@@ -1622,9 +1620,11 @@ b {
     padding-left: 0;
     padding-bottom: 24px;
   }
+  #section_aboutMe #aboutMe_container div {
+    width: 100%;
+  }
   #section_aboutMe .aboutMe_body {
     padding-right: 0;
-    width: 100%;
   }
 
   /*
