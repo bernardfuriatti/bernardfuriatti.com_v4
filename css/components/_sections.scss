@@ -1,1285 +1,1313 @@
 /*
 *   File to create section styles 
 */
-b{
-	font-family: 'Avenir';
-	font-weight: 900;
-	font-style: italic;
-	font-display: swap;
+b {
+    font-family: "Avenir";
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
 }
-
 
 /*
 *   Section 1
 */
 #section_BernardFuriatti {
-	position: relative;
-	z-index: 2;
+    position: relative;
+    z-index: 2;
 
-	padding-left: 24px;
-	padding-top: 24px;
-	padding-right: 24px;
+    padding-left: 24px;
+    padding-top: 24px;
+    padding-right: 24px;
 
-	box-sizing: border-box;
+    box-sizing: border-box;
 
-	#BernardFuriatti_container {
-		display: flex;
-		height: 85vh;
+    #BernardFuriatti_container {
+        display: flex;
+        height: 85vh;
 
-		align-items: center;
-		justify-content: center;
+        align-items: center;
+        justify-content: center;
 
-		border-radius: 2px;
-		box-shadow: 2px 2px 8px 0 rgba(0, 0, 0, 0.32);
-		background-color: #17171a;
+        border-radius: 2px;
+        box-shadow: 2px 2px 8px 0 rgba(0, 0, 0, 0.32);
+        background-color: #17171a;
 
-		#BernardFuriatti--body {
-			@include fontStyle_Avenir--body2;
+        #BernardFuriatti--body {
+            @include fontStyle_Avenir--body2;
+        }
 
-		}
+        #BernardFuriatti--title {
+            @include fontStyle_Bebas--headline1;
+        }
 
-		#BernardFuriatti--title {
-			@include fontStyle_Bebas--headline1;
-		}
+        #BernardFuriatti_image {
+            mix-blend-mode: lighten;
+            height: 90%;
+            float: right;
+            padding-left: 80px;
+        }
 
-		#BernardFuriatti_image {
-			mix-blend-mode: lighten;
-			height: 90%;
-			float: right;
-			padding-left: 80px;
-		}
+        .callToActions_container {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            margin-top: 8vh;
 
-		.callToActions_container {
-			display: flex;
-			justify-content: flex-end;
-			align-items: center;
-			margin-top: 8vh;
+            a,
+            button {
+                margin-left: 16px;
+                margin-right: 16px;
+            }
+        }
 
-			a,
-			button {
-				margin-left: 16px;
-				margin-right: 16px;
-			}
-		}
-
-		#Mobile--callToActions_container {
-			display: none;
-		}
-	}
+        #Mobile--callToActions_container {
+            display: none;
+        }
+    }
 }
 
 /*
 * Section 2
 */
 #section_Brand {
-	display: flex;
-	align-items: center;
-	justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-	position: relative;
-	z-index: 0;
-	top: -8px;
+    position: relative;
+    z-index: 0;
+    top: -8px;
 
-	border-top: 1px solid $divider-color;
-	border-bottom: 1px solid $divider-color;
+    border-top: 1px solid $divider-color;
+    border-bottom: 1px solid $divider-color;
 
-	padding-left: 24px;
-	padding-right: 24px;
-	padding-top: 32px;
-	padding-bottom: 32px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 32px;
+    padding-bottom: 32px;
 
-	#section_Brand--title {
-		@include fontStyle_Avenir--body2;
-	}
+    #section_Brand--title {
+        @include fontStyle_Avenir--body2;
+    }
 
-	img {
-		height: 32px;
-		margin-right: 2vw;
-		margin-left: 2vw;
-	}
+    img {
+        height: 32px;
+        margin-right: 2vw;
+        margin-left: 2vw;
+    }
 }
 
 /*
 * Section 3
 */
 #section_aboutMe {
-	display: flex;
-	min-height: 40vh;
-	width: 100vw;
+    display: flex;
+    min-height: 40vh;
+    width: 100vw;
 
-	align-items: center;
-	justify-content: center;
+    align-items: center;
+    justify-content: center;
 
-	padding-left: 32px;
-	padding-right: 32px;
-	box-sizing: border-box;
+    padding-left: 32px;
+    padding-right: 32px;
+    box-sizing: border-box;
 
-	#aboutMe_title--container {
-		// width: 25%;
-		padding-right: 80px;
+    #aboutMe_title--container {
+        // width: 25%;
+        padding-right: 80px;
 
-		div {
-			float: right;
-		}
-	}
-	#aboutMe_container {
-		display: flex;
-		width: 50%;
-		box-sizing: border-box;
+        div {
+            float: right;
+        }
+    }
+    #aboutMe_container {
+        display: flex;
+        width: 50%;
+        box-sizing: border-box;
 
-		div{
-			width: 50%;
-		}
+        div {
+            width: 50%;
+        }
 
-		// padding-left: 40px;
-	}
-	.aboutMe_body {
-		padding-right: 32px;
+        // padding-left: 40px;
+    }
+    .aboutMe_body {
+        padding-right: 32px;
 
-		
-		//  text-indent: 8px;
+        //  text-indent: 8px;
 
-		@include fontStyle_Avenir--body1;
-	}
+        @include fontStyle_Avenir--body1;
+    }
 }
 
 /*
 * Section 4 - My Projects
 */
 #section_myProjects {
-	padding-top: 40px;
-	padding-bottom: 80px;
+    padding-top: 40px;
+    padding-bottom: 80px;
 
-	#section_myProjects--title {
-		display: flex;
-		justify-content: center;
-		margin: 40px;
-	}
-	width: 100vw;
-	background-color: $primary-color;
+    #section_myProjects--title {
+        display: flex;
+        justify-content: center;
+        margin: 40px;
+    }
+    width: 100vw;
+    background-color: $primary-color;
 
-	.section_myProjects--banner {
-		display: flex;
-		align-items: center;
-		justify-content: flex-end;
-		margin-bottom: 32px;
+    .section_myProjects--banner {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        margin-bottom: 32px;
 
-		.section_myProjects--content {
-			width: 30vw;
+        .section_myProjects--content {
+            width: 30vw;
 
-			h4 {
-				@include fontStyle_Avenir--headline4;
-				padding-bottom: 32px;
-				padding-top: 16px;
-			}
+            h4 {
+                @include fontStyle_Avenir--headline3;
+                padding-bottom: 8px;
+                padding-top: 32px;
+            }
 
-			p {
-				@include fontStyle_Avenir--body1;
-				padding-bottom: 48px;
-			}
-		}
+            p {
+                @include fontStyle_Avenir--body1;
+                padding-bottom: 16px;
 
-		img {
-			padding-left: 5vw;
-			height: auto;
-			width: 50vw;
-			mix-blend-mode: lighten;
-			margin-bottom: 16px;
-		}
-	}
+                span {
+                    padding: 2px 8px 0px 8px;
+                    display: inline-block;
+                    background-color: #ffffff38;
+                    color: white;
+                    border-radius: 2px;
+                    text-transform: uppercase;
+                    margin: 4px 4px 4px 0px;
+                    @include fontStyle_Avenir--caption;
+                    letter-spacing: 2px;
+                    font-weight: 400;
+                    font-size: 8pt;
+                }
+            }
+        }
 
-	/*
+        img {
+            padding-left: 5vw;
+            height: auto;
+            width: 50vw;
+            mix-blend-mode: lighten;
+            margin-bottom: 16px;
+        }
+    }
+
+    /*
     *   Section 5 Banner 2
     */
-	#section_myProjects--banner2 {
-		justify-content: flex-start !important;
+    #section_myProjects--banner2 {
+        justify-content: flex-start !important;
 
-		img {
-			padding-left: 0;
-			padding-right: 10vw;
-			box-sizing: border-box;
-		}
-	}
+        img {
+            padding-left: 0;
+            padding-right: 10vw;
+            box-sizing: border-box;
+        }
+    }
 }
 
 /*
 * Section 4.1 - More projects
 */
 .fourthSection_moreProject {
-	background-color: $primary-color;
-	margin-top: -1px;
+    background-color: $primary-color;
+    margin-top: -1px;
 
-	.moreProject_Element {
-		display: inline-block;
-		width: 30vw;
-		// box-sizing: border-box;
-		border: black 0px solid;
+    .moreProject_Element {
+        display: inline-block;
+        width: 30vw;
+        // box-sizing: border-box;
+        border: black 0px solid;
 
-		transition: border linear 0.3s;
-		padding: 48px 24px;
+        transition: border linear 0.3s;
+        padding: 48px 24px;
 
-		.element--Id {
-			display: flex;
-			align-items: flex-start;
-		}
+        .element--Id {
+            display: flex;
+            align-items: flex-start;
+        }
 
-		h4 {
-			padding-top: 32px;
-			@include fontStyle_Avenir--headline4;
-		}
+        h4 {
+            padding-top: 32px;
+            @include fontStyle_Avenir--headline5;
+        }
 
-		p {
-			position: relative;
-			max-width: 80%;
-			margin-bottom: 32px;
-		}
+        p {
+            position: relative;
+            max-width: 80%;
+            margin-bottom: 32px;
+        }
 
-		img {
-			width: 100%;
-		}
-	}
+        img {
+            width: 100%;
+        }
+    }
 
-	// .moreProject_Element:hover{
-	//     border: white 12px solid;
-	// }
+    // .moreProject_Element:hover{
+    //     border: white 12px solid;
+    // }
 
-	p {
-		@include fontStyle_Avenir--body1;
-	}
+    p {
+        @include fontStyle_Avenir--body1;
+    }
 
-	.moreProject_grid {
-		display: grid;
-		grid-template-areas:
-			"space0 element0"
-			"element1 element0"
-			"element1 element2"
-			"space1 element2";
-		width: 80vw;
-		margin: auto;
-		justify-content: center;
-		grid-column-gap: 8vw;
-		grid-row-gap: 8vh;
-	}
-	.title--0 {
-		grid-area: space0;
-		justify-self: center;
-	}
-	.element--0 {
-		grid-area: element0;
-	}
-	.element--1 {
-		grid-area: element1;
-	}
-	.element--2 {
-		grid-area: element2;
-	}
+    .moreProject_grid {
+        display: grid;
+        grid-template-areas:
+            "space0 element0"
+            "element1 element0"
+            "element1 element2"
+            "space1 element2";
+        width: 80vw;
+        margin: auto;
+        justify-content: center;
+        grid-column-gap: 8vw;
+        grid-row-gap: 8vh;
+    }
+    .title--0 {
+        grid-area: space0;
+        justify-self: center;
+    }
+    .element--0 {
+        grid-area: element0;
+    }
+    .element--1 {
+        grid-area: element1;
+    }
+    .element--2 {
+        grid-area: element2;
+    }
 }
 /*
 * Section 4.1 - More projects (Mobile)
 */
 .Mobile_fourthSection_moreProject {
-	display: none;
+    display: none;
 }
 
 /*
 * Section 5 - Who I've Designed For
 */
 .section_who {
-	display: flex;
-	height: 80vh;
-	align-items: center;
-	justify-content: center;
-	background: linear-gradient(180deg, #17171a 50%, white 50%);
-	padding-left: 17.5%;
-	padding-right: 17.5%;
+    display: flex;
+    height: 80vh;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(180deg, #17171a 50%, white 50%);
+    padding-left: 17.5%;
+    padding-right: 17.5%;
 
-	margin-bottom: 10vh;
-	margin-top: -1px;
+    margin-bottom: 10vh;
+    margin-top: -1px;
 
-	.who_container {
-		height: 100%;
+    .who_container {
+        height: 100%;
 
-		padding-right: 8vw;
+        padding-right: 8vw;
 
-		.who_container--title {
-			display: flex;
-			align-items: center;
+        .who_container--title {
+            display: flex;
+            align-items: center;
 
-			height: 50%;
-		}
-	}
+            height: 50%;
+        }
+    }
 
-	.who_container--info {
-		width: 80%;
-		@include fontStyle_Avenir--body1;
-	}
+    .who_container--info {
+        width: 80%;
+        @include fontStyle_Avenir--body1;
+    }
 
-	.brands_grid {
-		display: inline-grid;
-		height: 100%;
-		grid-template-areas:
-			"brand1 brand2"
-			"brand3 brand4"
-			"brand5 brand6"
-			"brand7 brand8";
-		grid-column-gap: 8vw;
-		padding: 40px;
-		background-color: white;
-		border: 12px solid $primary-color;
-		box-sizing: border-box;
+    .brands_grid {
+        display: inline-grid;
+        height: 100%;
+        grid-template-areas:
+            "brand1 brand2"
+            "brand3 brand4"
+            "brand5 brand6"
+            "brand7 brand8";
+        grid-column-gap: 8vw;
+        padding: 40px;
+        background-color: white;
+        border: 12px solid $primary-color;
+        box-sizing: border-box;
 
-		align-items: center;
-		justify-items: center;
+        align-items: center;
+        justify-items: center;
 
-		img {
-			height: 50px;
-		}
-	}
+        img {
+            height: 50px;
+        }
+    }
 
-	.brand--1 {
-		grid-area: brand1;
-	}
-	.brand--2 {
-		grid-area: brand2;
-	}
-	.brand--3 {
-		grid-area: brand3;
-	}
-	.brand--4 {
-		grid-area: brand4;
-	}
-	.brand--5 {
-		grid-area: brand5;
-	}
-	.brand--6 {
-		grid-area: brand6;
-	}
-	.brand--7 {
-		grid-area: brand7;
-	}
-	.brand--8 {
-		grid-area: brand8;
-	}
+    .brand--1 {
+        grid-area: brand1;
+    }
+    .brand--2 {
+        grid-area: brand2;
+    }
+    .brand--3 {
+        grid-area: brand3;
+    }
+    .brand--4 {
+        grid-area: brand4;
+    }
+    .brand--5 {
+        grid-area: brand5;
+    }
+    .brand--6 {
+        grid-area: brand6;
+    }
+    .brand--7 {
+        grid-area: brand7;
+    }
+    .brand--8 {
+        grid-area: brand8;
+    }
 }
 
 /*
 * Footer
 */
 #section_footer {
-	padding: 24px;
-	box-sizing: border-box;
+    padding: 24px;
+    box-sizing: border-box;
 
-	#footer_container {
-		padding: 64px;
-		display: flex;
-		flex-direction: row;
+    #footer_container {
+        padding: 64px;
+        display: flex;
+        flex-direction: row;
 
-		align-items: center;
-		justify-content: center;
+        align-items: center;
+        justify-content: center;
 
-		border-radius: 2px;
-		box-shadow: 2px 2px 8px 0 rgba(0, 0, 0, 0.32);
-		background-color: #17171a;
+        border-radius: 2px;
+        box-shadow: 2px 2px 8px 0 rgba(0, 0, 0, 0.32);
+        background-color: #17171a;
 
-		p {
-			margin: 0;
-		}
+        p {
+            margin: 0;
+        }
 
-		#footer--body {
-			@include fontStyle_Avenir--body2;
-		}
+        #footer--body {
+            @include fontStyle_Avenir--body2;
+        }
 
-		#footer--body2 {
-			@include fontStyle_Avenir--caption;
-			margin-top: 32px;
-		}
+        #footer--body2 {
+            @include fontStyle_Avenir--caption;
+            margin-top: 32px;
+        }
 
-		#footer--title {
-			@include fontStyle_Bebas--headline1;
-		}
+        #footer--title {
+            @include fontStyle_Bebas--headline1;
+        }
 
-		.callToActions_container {
-			display: flex;
-			justify-content: flex-start;
-			align-items: center;
-			margin-top: 32px;
+        .callToActions_container {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            margin-top: 32px;
 
-			a {
-				margin-right: 16px;
-			}
-			button {
-				margin-left: 16px;
-			}
-		}
+            a {
+                margin-right: 16px;
+            }
+            button {
+                margin-left: 16px;
+            }
+        }
 
-		#footer_signature {
-			padding-left: 8vw;
-			display: flex;
-			flex-direction: column;
-			align-items: flex-end;
+        #footer_signature {
+            padding-left: 8vw;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
 
-			#signature-image {
-				padding-top: 24px;
-				height: 48px;
-			}
-		}
-	}
+            #signature-image {
+                padding-top: 24px;
+                height: 48px;
+            }
+        }
+    }
 
-	#mobile-footer_signature {
-		display: none;
-	}
+    #mobile-footer_signature {
+        display: none;
+    }
 }
 
 //ATEN"CÃO TROCA MEDIA ABAIXO
 @media only screen and (max-width: 1920px) and (min-width: 1367px) {
-	/* hi-res laptops and desktops */
+    /* hi-res laptops and desktops */
 
-	/*
+    /*
     * Section 2
     */
-	#section_Brand {
-		img {
-			height: 32px;
-		}
-	}
+    #section_Brand {
+        img {
+            height: 32px;
+        }
+    }
 }
 @media only screen and (max-width: 1280px) and (min-width: 1025px) {
-	/* big landscape tablets, laptops, and desktops */
+    /* big landscape tablets, laptops, and desktops */
 
-	/*
+    /*
     * Section 2
     */
-	#section_Brand {
-		img {
-			height: 24px;
-		}
-	}
+    #section_Brand {
+        img {
+            height: 24px;
+        }
+    }
+    #section_myProjects {
+        .section_myProjects--banner {
+            .section_myProjects--content {
+                h4 {
+                    @include fontStyle_Avenir--headline4;
+                    padding-bottom: 8px;
+                    padding-top: 32px;
+                }
+            }
+        }
+    }
 }
 @media only screen and (max-width: 1024px) and (min-width: 961px) {
-	/* tablet, landscape iPad, lo-res laptops ands desktops */
+    /* tablet, landscape iPad, lo-res laptops ands desktops */
 
-	/*
+    /*
     * Section 2
     */
-	#section_Brand {
-		img {
-			height: 24px;
-		}
+    #section_Brand {
+        img {
+            height: 24px;
+        }
 	}
+	
+	#section_myProjects {
+        .section_myProjects--banner {
+            .section_myProjects--content {
+				width: 40vw;
+                h4 {
+                    @include fontStyle_Avenir--headline4;
+                    padding-bottom: 8px;
+                    padding-top: 32px;
+                }
+            }
+        }
+    }
 }
 @media only screen and (max-width: 960px) and (min-width: 641px) {
-	/* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+    /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
 
-	/*
+    /*
     * Section 1
     */
-	#section_BernardFuriatti {
-		#BernardFuriatti_container #BernardFuriatti_image {
-			mix-blend-mode: lighten;
-			height: 60%;
-			float: right;
-			padding-left: 64px;
-		}
-	}
-	/*
+    #section_BernardFuriatti {
+        #BernardFuriatti_container #BernardFuriatti_image {
+            mix-blend-mode: lighten;
+            height: 60%;
+            float: right;
+            padding-left: 64px;
+        }
+    }
+    /*
     * Section 2
     */
-	#section_Brand {
-		img {
-			height: 24px;
-		}
-		#Brand--duoGourmet {
-			display: none;
-		}
-	}
+    #section_Brand {
+        img {
+            height: 24px;
+        }
+        #Brand--duoGourmet {
+            display: none;
+        }
+    }
 
-	/*
+    /*
     * Section 3
     */
-	#section_aboutMe {
-		display: flex;
-		height: auto;
+    #section_aboutMe {
+        display: flex;
+        height: auto;
 
-		flex-direction: column;
+        flex-direction: column;
 
-		padding-top: 32px;
+        padding-top: 32px;
 
-		#aboutMe_title--container {
-			width: 100%;
-			padding-right: 0;
+        #aboutMe_title--container {
+            width: 100%;
+            padding-right: 0;
 
-			div {
-				float: left;
-				h1 {
-					@include fontStyle_Bebas--headline2;
-				}
-			}
-		}
+            div {
+                float: left;
+                h1 {
+                    @include fontStyle_Bebas--headline2;
+                }
+            }
+        }
 
-		#aboutMe_container {
-			display: flex;
+        #aboutMe_container {
+            display: flex;
 
-			width: 100%;
+            width: 100%;
 
-			box-sizing: border-box;
-			padding-left: 0;
-			padding-bottom: 24px;
-			#aboutMe_body1 {
-				padding-right: 24px;
-			}
-			.aboutMe_body {
-				padding-right: 0;
-			}
-		}
-	}
-/*
+            box-sizing: border-box;
+            padding-left: 0;
+            padding-bottom: 24px;
+            #aboutMe_body1 {
+                padding-right: 24px;
+            }
+            .aboutMe_body {
+                padding-right: 0;
+            }
+        }
+    }
+    /*
 * Section 4 - My Projects
 */
-#section_myProjects {
-	padding-top: 40px;
-	padding-bottom: 80px;
+    #section_myProjects {
+        padding-top: 40px;
+        padding-bottom: 80px;
 
+        .section_myProjects--banner {
+            .section_myProjects--content {
+                width: 40vw;
+            }
+        }
 
-	.section_myProjects--banner {
-	
-		.section_myProjects--content {
-			width: 40vw;
-		}
-	}
-
-	/*
+        /*
     *   Section 5 Banner 2
     */
-	#section_myProjects--banner2 {
-		justify-content: flex-start !important;
-	}
-}
+        #section_myProjects--banner2 {
+            justify-content: flex-start !important;
+        }
+    }
 
-	.fourthSection_moreProject {
-		background-color: $primary-color;
+    .fourthSection_moreProject {
+        background-color: $primary-color;
 
-		#section_title--h1 {
-			h1 {
-				@include fontStyle_Bebas--headline3;
-			}
-		}
+        #section_title--h1 {
+            h1 {
+                @include fontStyle_Bebas--headline3;
+            }
+        }
 
-		.moreProject_Element {
-			width: auto;
-			p{
-				max-width: 100%;
-			}
-		}
+        .moreProject_Element {
+            width: auto;
+            p {
+                max-width: 100%;
+            }
+        }
 
-		h4 {
-			padding-top: 32px;
-			@include fontStyle_Avenir--headline5;
-		}
+        h4 {
+            padding-top: 32px;
+            @include fontStyle_Avenir--headline6;
+        }
 
-		.moreProject_grid {
-			width: 90vw;
+        .moreProject_grid {
+            width: 90vw;
 
-			.space0 {
-				justify-content: center;
-				display: flex;
-			}
-		}
-	}
-	/*
+            .space0 {
+                justify-content: center;
+                display: flex;
+            }
+        }
+    }
+    /*
 * Section 5 - Who I've Designed For
 */
-.section_who {
-	display: flex;
-	height: 80vh;
-	align-items: center;
-	justify-content: center;
-	background: linear-gradient(180deg, #17171a 40%, white 40%);
-	padding-left: 17.5%;
-	padding-right: 17.5%;
+    .section_who {
+        display: flex;
+        height: 80vh;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(180deg, #17171a 40%, white 40%);
+        padding-left: 17.5%;
+        padding-right: 17.5%;
 
-	margin-bottom: 10vh;
-	margin-top: -1px;
+        margin-bottom: 10vh;
+        margin-top: -1px;
 
-	.who_container {
-		height: 100%;
+        .who_container {
+            height: 100%;
 
-		padding-right: 8vw;
+            padding-right: 8vw;
 
-		.who_container--title {
-			display: flex;
-			align-items: center;
-			#section_title--h1{
-				h1{
-					@include fontStyle_Bebas--headline2;
-				}
-			}
-		
-			height: 40%;
+            .who_container--title {
+                display: flex;
+                align-items: center;
+                #section_title--h1 {
+                    h1 {
+                        @include fontStyle_Bebas--headline2;
+                    }
+                }
 
-		}
-	}
+                height: 40%;
+            }
+        }
 
-	.who_container--info {
-		width: 100%;
-		@include fontStyle_Avenir--body1;
-	}
+        .who_container--info {
+            width: 100%;
+            @include fontStyle_Avenir--body1;
+        }
 
-	.brands_grid {
-		display: inline-grid;
-		height: 80%;
-		grid-template-areas:
-			"brand1 brand2"
-			"brand3 brand4"
-			"brand5 brand6"
-			"brand7 brand8";
-		grid-column-gap: 3vw;
-		padding: 8px 40px ;
-		background-color: white;
-		border: 12px solid $primary-color;
-		box-sizing: border-box;
+        .brands_grid {
+            display: inline-grid;
+            height: 80%;
+            grid-template-areas:
+                "brand1 brand2"
+                "brand3 brand4"
+                "brand5 brand6"
+                "brand7 brand8";
+            grid-column-gap: 3vw;
+            padding: 8px 40px;
+            background-color: white;
+            border: 12px solid $primary-color;
+            box-sizing: border-box;
 
-		align-items: center;
-		justify-items: center;
+            align-items: center;
+            justify-items: center;
 
-		img {
-			height: 5vh;
-		}
-	}
+            img {
+                height: 5vh;
+            }
+        }
 
-	.brand--1 {
-		grid-area: brand1;
-	}
-	.brand--2 {
-		grid-area: brand2;
-	}
-	.brand--3 {
-		grid-area: brand3;
-	}
-	.brand--4 {
-		grid-area: brand4;
-	}
-	.brand--5 {
-		grid-area: brand5;
-	}
-	.brand--6 {
-		grid-area: brand6;
-	}
-	.brand--7 {
-		grid-area: brand7;
-	}
-	.brand--8 {
-		grid-area: brand8;
-	}
-}
+        .brand--1 {
+            grid-area: brand1;
+        }
+        .brand--2 {
+            grid-area: brand2;
+        }
+        .brand--3 {
+            grid-area: brand3;
+        }
+        .brand--4 {
+            grid-area: brand4;
+        }
+        .brand--5 {
+            grid-area: brand5;
+        }
+        .brand--6 {
+            grid-area: brand6;
+        }
+        .brand--7 {
+            grid-area: brand7;
+        }
+        .brand--8 {
+            grid-area: brand8;
+        }
+    }
 }
 @media only screen and (max-width: 640px) and (min-width: 481px) {
-	/* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+    /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
 
-	/*
+    /*
     * Section 1
     */
-	#section_BernardFuriatti {
-		padding-left: 8px;
-		padding-top: 8px;
-		padding-right: 8px;
+    #section_BernardFuriatti {
+        padding-left: 8px;
+        padding-top: 8px;
+        padding-right: 8px;
 
-		#BernardFuriatti_container {
-			display: flex;
+        #BernardFuriatti_container {
+            display: flex;
 
-			align-items: center;
-			justify-content: space-between;
-			flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            flex-direction: column;
 
-			box-sizing: border-box;
-			padding: 24px;
+            box-sizing: border-box;
+            padding: 24px;
 
-			#BernardFuriatti_container--group {
-				display: flex;
-				flex-direction: column;
-				align-items: center;
-			}
+            #BernardFuriatti_container--group {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
 
-			#BernardFuriatti--body {
-				@include fontStyle_Avenir--body2;
-				text-align: center;
-			}
+            #BernardFuriatti--body {
+                @include fontStyle_Avenir--body2;
+                text-align: center;
+            }
 
-			#BernardFuriatti--title {
-				@include fontStyle_Bebas--headline3;
+            #BernardFuriatti--title {
+                @include fontStyle_Bebas--headline3;
 
-				br {
-					display: none;
-				}
-			}
+                br {
+                    display: none;
+                }
+            }
 
-			#BernardFuriatti_image {
-				height: 50vh;
-				padding: 0;
+            #BernardFuriatti_image {
+                height: 50vh;
+                padding: 0;
 
-				-webkit-transform: scaleX(-1);
-				transform: scaleX(-1);
-			}
+                -webkit-transform: scaleX(-1);
+                transform: scaleX(-1);
+            }
 
-			.callToActions_container {
-				display: none;
-			}
+            .callToActions_container {
+                display: none;
+            }
 
-			#Mobile--callToActions_container {
-				display: flex;
-				width: 100%;
-				justify-content: space-between;
+            #Mobile--callToActions_container {
+                display: flex;
+                width: 100%;
+                justify-content: space-between;
 
-				a {
-					padding-right: 24px;
-				}
-			}
-		}
-	}
+                a {
+                    padding-right: 24px;
+                }
+            }
+        }
+    }
 
-	/*
+    /*
     * Section 2
     */
-	#section_Brand {
-		display: block;
+    #section_Brand {
+        display: block;
 
-		padding-top: 16px;
-		padding-bottom: 16px;
+        padding-top: 16px;
+        padding-bottom: 16px;
 
-		img {
-			height: 24px;
-		}
+        img {
+            height: 24px;
+        }
 
-		#Brand--supermix {
-			display: none;
-		}
-		#Brand--duoGourmet {
-			display: none;
-		}
+        #Brand--supermix {
+            display: none;
+        }
+        #Brand--duoGourmet {
+            display: none;
+        }
 
-		#section_Brand--title {
-			display: flex;
-			justify-content: center;
-			margin-bottom: 8px;
-		}
-		#section_Brand--group {
-			display: flex;
-			align-items: center;
-			justify-content: center;
-		}
-	}
+        #section_Brand--title {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 8px;
+        }
+        #section_Brand--group {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
 
-	/*
+    /*
     * Section 3
     */
 
-	#section_aboutMe {
-		display: flex;
-		height: auto;
+    #section_aboutMe {
+        display: flex;
+        height: auto;
 
-		flex-direction: column;
+        flex-direction: column;
 
-		padding-top: 32px;
+        padding-top: 32px;
 
-		#aboutMe_title--container {
-			width: 100%;
-			padding-right: 0;
+        #aboutMe_title--container {
+            width: 100%;
+            padding-right: 0;
 
-			div {
-				float: left;
-				h1 {
-					@include fontStyle_Bebas--headline2;
-				}
-			}
-		}
+            div {
+                float: left;
+                h1 {
+                    @include fontStyle_Bebas--headline2;
+                }
+            }
+        }
 
-		#aboutMe_container {
-			display: flex;
+        #aboutMe_container {
+            display: flex;
 
-			width: 100%;
+            width: 100%;
 
-			box-sizing: border-box;
-			padding-left: 0;
-			padding-bottom: 24px;
-			#aboutMe_body1 {
-				padding-right: 24px;
-			}
-			.aboutMe_body {
-				padding-right: 0;
-			}
-		}
-	}
+            box-sizing: border-box;
+            padding-left: 0;
+            padding-bottom: 24px;
+            #aboutMe_body1 {
+                padding-right: 24px;
+            }
+            .aboutMe_body {
+                padding-right: 0;
+            }
+        }
+    }
 
-	/*
+    /*
 	* Section 4 - My Projects
 	*/
-	#section_myProjects {
-		padding-top: 8px;
-		padding-bottom: 8px;
-		#section_myProjects--title {
-			display: flex;
-			justify-content: center;
-			margin: 40px;
-		}
-		width: 100vw;
-		background-color: $primary-color;
+    #section_myProjects {
+        padding-top: 8px;
+        padding-bottom: 8px;
+        #section_myProjects--title {
+            display: flex;
+            justify-content: center;
+            margin: 40px;
+        }
+        width: 100vw;
+        background-color: $primary-color;
 
-		.section_myProjects--banner {
-			display: flex;
-			flex-direction: column;
-			padding-left: 24px;
-			padding-right: 24px;
+        .section_myProjects--banner {
+            display: flex;
+            flex-direction: column;
+            padding-left: 24px;
+            padding-right: 24px;
 
-			.section_myProjects--content {
-				width: auto;
+            .section_myProjects--content {
+                width: auto;
 
-				h4 {
-					@include fontStyle_Avenir--headline5;
-					padding-bottom: 8px;
-					padding-top: 24px;
-				}
+                h4 {
+                    @include fontStyle_Avenir--headline5;
+                    // padding-bottom: 8px;
+                    // padding-top: 24px;
+                }
 
-				p {
-					@include fontStyle_Avenir--body1;
-					padding-bottom: 24px;
-				}
-			}
+                p {
+                    @include fontStyle_Avenir--body1;
+                }
+            }
 
-			img {
-				order: -1;
-				padding-left: 0;
-				height: auto;
-				width: 95vw;
-				mix-blend-mode: lighten;
-			}
-		}
-		#section_myProjects--banner2 {
-			img {
-				margin-left: -24px;
-			}
-		}
-	}
+            img {
+                order: -1;
+                padding-left: 0;
+                height: auto;
+                width: 95vw;
+                mix-blend-mode: lighten;
+            }
+        }
+        #section_myProjects--banner2 {
+            img {
+                margin-left: -24px;
+            }
+        }
+    }
 
-	/*
+    /*
 	* Section 4.1 - Other projects
 	*/
-	.fourthSection_moreProject {
-		display: none;
-	}
-	.Mobile_fourthSection_moreProject {
-		display: block;
+    .fourthSection_moreProject {
+        display: none;
+    }
+    .Mobile_fourthSection_moreProject {
+        display: block;
 
-		//css style is on carousel.scss
-	}
-	/*
+        //css style is on carousel.scss
+    }
+    /*
 	* Section 5 - Who I've Designed For
 	*/
-	.section_who {
-		display: flex;
-		height: auto;
-		flex-direction: column;
+    .section_who {
+        display: flex;
+        height: auto;
+        flex-direction: column;
 
-		padding-left: 24px;
-		padding-right: 24px;
+        padding-left: 24px;
+        padding-right: 24px;
 
-		padding-top: 80px;
+        padding-top: 80px;
 
-		background: linear-gradient(180deg, $primary-color 85%, white 50%);
+        background: linear-gradient(180deg, $primary-color 85%, white 50%);
 
-		.who_container {
-			height: auto;
+        .who_container {
+            height: auto;
 
-			padding-right: 0;
+            padding-right: 0;
 
-			#section_title--h1 {
-				h1 {
-					@include fontStyle_Bebas--headline2;
-				}
-			}
-		}
+            #section_title--h1 {
+                h1 {
+                    @include fontStyle_Bebas--headline2;
+                }
+            }
+        }
 
-		.who_container--info {
-			width: 100%;
-			p {
-				@include fontStyle_Avenir--body1;
-				color: white;
-			}
-		}
+        .who_container--info {
+            width: 100%;
+            p {
+                @include fontStyle_Avenir--body1;
+                color: white;
+            }
+        }
 
-		.brands_grid {
-			display: inline-grid;
-			height: 100%;
-			grid-template-areas:
-				"brand1 brand2"
-				"brand3 brand4"
-				"brand5 brand6"
-				"brand7 brand8";
-			grid-column-gap: 10vw;
-			grid-row-gap: 10vw;
+        .brands_grid {
+            display: inline-grid;
+            height: 100%;
+            grid-template-areas:
+                "brand1 brand2"
+                "brand3 brand4"
+                "brand5 brand6"
+                "brand7 brand8";
+            grid-column-gap: 10vw;
+            grid-row-gap: 10vw;
 
-			align-items: center;
-			justify-items: center;
-			border: 6px solid $primary-color;
+            align-items: center;
+            justify-items: center;
+            border: 6px solid $primary-color;
 
-			img {
-				height: 40px;
-			}
-		}
-	}
-		/*
+            img {
+                height: 40px;
+            }
+        }
+    }
+    /*
 	* Footer
 	*/
 
-	#section_footer {
-		padding: 8px;
+    #section_footer {
+        padding: 8px;
 
-		#footer_container {
+        #footer_container {
+            #footer_signature {
+                display: none;
+            }
 
-			#footer_signature {
-				display: none;
-			}
+            #footer--body {
+                @include fontStyle_Avenir--body1;
+            }
 
-			#footer--body {
-				@include fontStyle_Avenir--body1;
-			}
-	
-			#footer--body2 {
-				@include fontStyle_Avenir--subtitle1;
-				margin-top: 32px;
-			}
-	
-			#footer--title {
-				@include fontStyle_Bebas--headline1;
-			}
+            #footer--body2 {
+                @include fontStyle_Avenir--subtitle1;
+                margin-top: 32px;
+            }
 
-		}
+            #footer--title {
+                @include fontStyle_Bebas--headline1;
+            }
+        }
 
-		#mobile-footer_signature {
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
-			align-items: center;
-			padding-top: 24px;
-			padding-bottom: 24px;
+        #mobile-footer_signature {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding-top: 24px;
+            padding-bottom: 24px;
 
-			#footer--body {
-				@include fontStyle_Avenir--body1;
-			}
+            #footer--body {
+                @include fontStyle_Avenir--body1;
+            }
 
-			#signature-image {
-				color: red;
-				padding-top: 24px;
-				height: 48px;
-			}
-		}
-	}
+            #signature-image {
+                color: red;
+                padding-top: 24px;
+                height: 48px;
+            }
+        }
+    }
 }
 @media only screen and (max-width: 480px) and (min-width: 0) {
-	/* smartphones, iPhone, portrait 480x320 phones */
-	/*
+    /* smartphones, iPhone, portrait 480x320 phones */
+    /*
     * Section 1
     */
-	#section_BernardFuriatti {
-		padding-left: 8px;
-		padding-top: 8px;
-		padding-right: 8px;
+    #section_BernardFuriatti {
+        padding-left: 8px;
+        padding-top: 8px;
+        padding-right: 8px;
 
-		#BernardFuriatti_container {
-			display: flex;
+        #BernardFuriatti_container {
+            display: flex;
 
-			align-items: center;
-			justify-content: space-between;
-			flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            flex-direction: column;
 
-			box-sizing: border-box;
-			padding: 24px;
+            box-sizing: border-box;
+            padding: 24px;
 
-			#BernardFuriatti_container--group {
-				display: flex;
-				flex-direction: column;
-				align-items: center;
-			}
+            #BernardFuriatti_container--group {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
 
-			#BernardFuriatti--body {
-				@include fontStyle_Avenir--body2;
-				text-align: center;
-			}
+            #BernardFuriatti--body {
+                @include fontStyle_Avenir--body2;
+                text-align: center;
+            }
 
-			#BernardFuriatti--title {
-				@include fontStyle_Bebas--headline5;
+            #BernardFuriatti--title {
+                @include fontStyle_Bebas--headline5;
 
-				br {
-					display: none;
-				}
-			}
+                br {
+                    display: none;
+                }
+            }
 
-			#BernardFuriatti_image {
-				height: 50vh;
-				padding: 0;
+            #BernardFuriatti_image {
+                height: 50vh;
+                padding: 0;
 
-				-webkit-transform: scaleX(-1);
-				transform: scaleX(-1);
-			}
+                -webkit-transform: scaleX(-1);
+                transform: scaleX(-1);
+            }
 
-			.callToActions_container {
-				display: none;
-			}
+            .callToActions_container {
+                display: none;
+            }
 
-			#Mobile--callToActions_container {
-				display: flex;
-				width: 100%;
-				justify-content: space-between;
+            #Mobile--callToActions_container {
+                display: flex;
+                width: 100%;
+                justify-content: space-between;
 
-				a {
-					padding-right: 32px;
-				}
-			}
-		}
-	}
+                a {
+                    padding-right: 32px;
+                }
+            }
+        }
+    }
 
-	/*
+    /*
     * Section 2
     */
-	#section_Brand {
-		display: block;
+    #section_Brand {
+        display: block;
 
-		padding-top: 16px;
-		padding-bottom: 16px;
+        padding-top: 16px;
+        padding-bottom: 16px;
 
-		img {
-			height: 32px;
-		}
+        img {
+            height: 32px;
+        }
 
-		#Brand--localizaHertz {
-			display: none;
-		}
+        #Brand--localizaHertz {
+            display: none;
+        }
 
-		#Brand--falconi {
-			display: none;
-		}
+        #Brand--falconi {
+            display: none;
+        }
 
-		#Brand--supermix {
-			display: none;
-		}
-		#Brand--duoGourmet {
-			display: none;
-		}
+        #Brand--supermix {
+            display: none;
+        }
+        #Brand--duoGourmet {
+            display: none;
+        }
 
-		#section_Brand--title {
-			display: flex;
-			justify-content: center;
-			margin-bottom: 16px;
-		}
-		#section_Brand--group {
-			display: flex;
-			align-items: center;
-			justify-content: center;
-		}
-	}
+        #section_Brand--title {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 16px;
+        }
+        #section_Brand--group {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
 
-	/*
+    /*
     * Section 3
     */
-	#section_aboutMe {
-		display: flex;
-		height: auto;
+    #section_aboutMe {
+        display: flex;
+        height: auto;
 
-		flex-direction: column;
+        flex-direction: column;
 
-		padding-top: 32px;
+        padding-top: 32px;
 
-		#aboutMe_title--container {
-			width: 100%;
-			padding-right: 0;
+        #aboutMe_title--container {
+            width: 100%;
+            padding-right: 0;
 
-			div {
-				float: left;
-				h1 {
-					@include fontStyle_Bebas--headline2;
-				}
-			}
-		}
+            div {
+                float: left;
+                h1 {
+                    @include fontStyle_Bebas--headline2;
+                }
+            }
+        }
 
-		#aboutMe_container {
-			display: flex;
-			flex-direction: column;
+        #aboutMe_container {
+            display: flex;
+            flex-direction: column;
 
-			width: 100%;
+            width: 100%;
 
-			box-sizing: border-box;
-			padding-left: 0;
-			padding-bottom: 24px;
-			div{
-				width: 100%;
+            box-sizing: border-box;
+            padding-left: 0;
+            padding-bottom: 24px;
+            div {
+                width: 100%;
+            }
+        }
+        .aboutMe_body {
+            padding-right: 0;
+        }
+    }
 
-			}
-		}
-		.aboutMe_body {
-			padding-right: 0;
-
-		}
-	}
-
-	/*
+    /*
 	* Section 4 - My Projects
 	*/
-	#section_myProjects {
-		padding-top: 8px;
-		padding-bottom: 80px;
-		#section_myProjects--title {
-			display: flex;
-			justify-content: center;
-			margin: 40px;
-		}
-		width: 100vw;
-		background-color: $primary-color;
+    #section_myProjects {
+        padding-top: 8px;
+        padding-bottom: 80px;
+        #section_myProjects--title {
+            display: flex;
+            justify-content: center;
+            margin: 40px;
+        }
+        width: 100vw;
+        background-color: $primary-color;
 
-		.section_myProjects--banner {
-			display: flex;
-			flex-direction: column;
-			padding-left: 24px;
-			padding-right: 24px;
+        .section_myProjects--banner {
+            display: flex;
+            flex-direction: column;
+            padding-left: 24px;
+            padding-right: 24px;
 
-			.section_myProjects--content {
-				width: auto;
+            .section_myProjects--content {
+                width: auto;
 
-				h4 {
-					@include fontStyle_Avenir--headline5;
-					padding-bottom: 8px;
-					padding-top: 24px;
-				}
+                h4 {
+                    @include fontStyle_Avenir--headline5;
+                    // padding-bottom: 8px;
+                    // padding-top: 24px;
+                }
 
-				p {
-					@include fontStyle_Avenir--body1;
-					padding-bottom: 24px;
-				}
-			}
+                p {
+                    @include fontStyle_Avenir--body1;
+                }
+            }
 
-			img {
-				order: -1;
-				padding-left: 0;
-				height: auto;
-				width: 95vw;
-				mix-blend-mode: lighten;
-			}
-		}
-		#section_myProjects--banner2 {
-			img {
-				margin-left: -24px;
-			}
-		}
-	}
+            img {
+                order: -1;
+                padding-left: 0;
+                height: auto;
+                width: 95vw;
+                mix-blend-mode: lighten;
+            }
+        }
+        #section_myProjects--banner2 {
+            img {
+                margin-left: -24px;
+            }
+        }
+    }
 
-	/*
+    /*
 	* Section 4.1 - Other projects
 	*/
-	.fourthSection_moreProject {
-		display: none;
-	}
-	.Mobile_fourthSection_moreProject {
-		display: block;
+    .fourthSection_moreProject {
+        display: none;
+    }
+    .Mobile_fourthSection_moreProject {
+        display: block;
 
-		//css style is on carousel.scss
-	}
+        //css style is on carousel.scss
+    }
 
-	/*
+    /*
 * Section 5 - Who I've Designed For
 */
-	.section_who {
-		display: flex;
-		height: auto;
-		flex-direction: column;
+    .section_who {
+        display: flex;
+        height: auto;
+        flex-direction: column;
 
-		padding-left: 24px;
-		padding-right: 24px;
+        padding-left: 24px;
+        padding-right: 24px;
 
-		padding-top: 40px;
+        padding-top: 40px;
 
-		background: linear-gradient(180deg, $primary-color 85%, white 50%);
+        background: linear-gradient(180deg, $primary-color 85%, white 50%);
 
-		.who_container {
-			height: auto;
+        .who_container {
+            height: auto;
 
-			padding-right: 0;
+            padding-right: 0;
 
-			#section_title--h1 {
-				h1 {
-					@include fontStyle_Bebas--headline2;
-				}
-			}
-		}
+            #section_title--h1 {
+                h1 {
+                    @include fontStyle_Bebas--headline2;
+                }
+            }
+        }
 
-		.who_container--info {
-			width: 100%;
-			p {
-				@include fontStyle_Avenir--body1;
-				color: white;
-			}
-		}
+        .who_container--info {
+            width: 100%;
+            p {
+                @include fontStyle_Avenir--body1;
+                color: white;
+            }
+        }
 
-		.brands_grid {
-			display: inline-grid;
-			height: 100%;
-			grid-template-areas:
-				"brand1 brand2"
-				"brand3 brand4"
-				"brand5 brand6"
-				"brand7 brand8";
-			grid-column-gap: 8vw;
-			grid-row-gap: 8vw;
+        .brands_grid {
+            display: inline-grid;
+            height: 100%;
+            grid-template-areas:
+                "brand1 brand2"
+                "brand3 brand4"
+                "brand5 brand6"
+                "brand7 brand8";
+            grid-column-gap: 8vw;
+            grid-row-gap: 8vw;
 
-			align-items: center;
-			justify-items: center;
-			border: 6px solid $primary-color;
+            align-items: center;
+            justify-items: center;
+            border: 6px solid $primary-color;
 
-			img {
-				height: 32px;
-			}
-		}
-	}
+            img {
+                height: 32px;
+            }
+        }
+    }
 
-	/*
+    /*
 	* Footer
 	*/
 
-	#section_footer {
-		padding: 8px;
+    #section_footer {
+        padding: 8px;
 
-		#footer_container {
-			#footer_signature {
-				display: none;
-			}
+        #footer_container {
+			padding: 40px;
+			// justify-content: normal;
+            #footer_signature {
+                display: none;
+            }
 
-			#footer--body {
-				@include fontStyle_Avenir--body1;
-			}
+            #footer--body {
+                @include fontStyle_Avenir--body1;
+            }
 
-			#footer--body2 {
-				@include fontStyle_Avenir--subtitle1;
-				margin-top: 32px;
-			}
+            #footer--body2 {
+                @include fontStyle_Avenir--subtitle1;
+                margin-top: 32px;
+            }
 
-			#footer--title {
-				@include fontStyle_Bebas--headline1;
-			}
-		}
+            #footer--title {
+                @include fontStyle_Bebas--headline1;
+            }
+        }
 
-		#mobile-footer_signature {
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
-			align-items: center;
-			padding-top: 24px;
-			padding-bottom: 24px;
+        #mobile-footer_signature {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding-top: 24px;
+            padding-bottom: 24px;
 
-			#footer--body {
-				@include fontStyle_Avenir--body1;
-			}
+            #footer--body {
+                @include fontStyle_Avenir--body1;
+            }
 
-			#signature-image {
-				color: red;
-				padding-top: 24px;
-				height: 48px;
-			}
-		}
-	}
+            #signature-image {
+                color: red;
+                padding-top: 24px;
+                height: 48px;
+            }
+        }
+    }
 }
